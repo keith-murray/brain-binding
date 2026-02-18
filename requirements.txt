@@ -1,3 +1,0 @@
-pandas~=3.0.1
-psychopy~=2025.2.4
-sweetpea~=0.2.12
