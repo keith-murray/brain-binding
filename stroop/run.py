@@ -1,4 +1,5 @@
 import uuid
+from datetime import datetime
 from pathlib import Path
 import csv
 
@@ -13,12 +14,16 @@ def main(sid: str) -> None:
     main_clock = core.Clock()
     logging.setDefaultClock(main_clock)
 
-    log_path = Path(f'{sid}.log')
+    timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+    data_dir = Path(__file__).parent.parent / 'data' / timestamp
+    data_dir.mkdir(parents=True, exist_ok=True)
+
+    log_path = data_dir / f'{sid}.log'
     logging.LogFile(str(log_path), level=logging.INFO, filemode='w')
     logging.info(f'Starting session sid={sid}')
 
     # -- WINDOW -- #
-    win = visual.Window(size=[1000, 10], fullscr=False, color='grey', name='Window')
+    win = visual.Window(size=[1200, 1000], fullscr=False, color='grey', name='Window', screen=1)
 
     # -- STIMULUS TIMELINE -- #
     fixation = visual.TextStim(win=win, pos=(0, 0), text='+', color='white')
@@ -42,7 +47,7 @@ def main(sid: str) -> None:
     trials = pd.read_csv(PATH_TRIALS)
 
     # -- CRASH-SAFE CSV WRITER -- #
-    out_csv_path = Path(f'{sid}.csv')
+    out_csv_path = data_dir / f'{sid}.csv'
     f = out_csv_path.open('w', newline='')
     fieldnames = ['sid', 'trial', 'color', 'word', 'key', 'rt', 'correct']
     writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -68,6 +73,7 @@ def main(sid: str) -> None:
             stroop.color = color
             stroop.draw()
             win.flip()
+            rt_clock.reset()
 
             # Response (robust polling loop)
             result = event.waitKeys(
