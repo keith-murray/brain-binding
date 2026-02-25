@@ -47,7 +47,6 @@ ITI_BASE = 3.0
 ITI_SD = 1.0
 ITI_MIN = 0.0
 
-REST_DURATION = 120.0  # 2 minutes
 
 MAX_STREAK = 3
 
@@ -69,7 +68,7 @@ def make_window() -> visual.Window:
     return visual.Window(
         size=WIN_SIZE,
         fullscr=False,
-        color='grey',
+        color='white',
         units=WIN_UNITS,
         name='Window',
         screen=WIN_SCREEN,
@@ -240,17 +239,30 @@ def show_response(win: visual.Window, stimuli: dict, slot_mapping: list,
 
 
 def show_text_screen(win: visual.Window, text: str) -> None:
-    """Show a text message and wait for spacebar."""
+    """Show a text message and wait for any key."""
     msg = visual.TextStim(
         win=win,
         text=text,
-        color='white',
+        color='black',
         height=0.07,
         wrapWidth=1.8,
     )
     msg.draw()
     win.flip()
-    event.waitKeys(keyList=['space'])
+    event.waitKeys()
+
+
+def wait_for_scanner(win: visual.Window) -> None:
+    """Show 'Waiting for scanner...' and block until the = (TR) pulse arrives."""
+    msg = visual.TextStim(
+        win=win,
+        text='Waiting for scanner...',
+        color='black',
+        height=0.07,
+    )
+    msg.draw()
+    win.flip()
+    event.waitKeys(keyList=['equal'])
 
 
 # --- Task runners ---
@@ -311,11 +323,6 @@ def run_wm_task(win, stimuli, fixation, key_labels, writer, csv_file,
         csv_file.flush()
 
 
-def run_rest(win, fixation):
-    fixation.draw()
-    win.flip()
-    core.wait(REST_DURATION)
-
 
 def run_main_task(win, stimuli, fixation, key_labels, writer, csv_file,
                   main_clock, rt_clock, sid, seed):
@@ -352,6 +359,7 @@ def run_main_task(win, stimuli, fixation, key_labels, writer, csv_file,
             isi2 = jitter(ISI_MEAN, ISI_SD, ISI_MIN)
             isi3 = jitter(ISI_MEAN, ISI_SD, ISI_MIN)
             isi4 = jitter(ISI_MEAN, ISI_SD, ISI_MIN)
+            isi5 = jitter(ISI_MEAN, ISI_SD, ISI_MIN)
             iti_dur = jitter(ITI_BASE, ITI_SD, ITI_MIN)
 
             # 1. Trial-start fixation
@@ -369,6 +377,7 @@ def run_main_task(win, stimuli, fixation, key_labels, writer, csv_file,
             t_test1 = show_stimulus(win, stimuli[test_seq[0]], STIM_DURATION, main_clock)
             show_blank(win, fixation, isi4, main_clock)
             t_test2 = show_stimulus(win, stimuli[test_seq[1]], STIM_DURATION, main_clock)
+            show_blank(win, fixation, isi5, main_clock)
 
             # 4. Response screen
             slot_mapping = make_slot_mapping()
@@ -417,6 +426,7 @@ def run_main_task(win, stimuli, fixation, key_labels, writer, csv_file,
                 'isi2': isi2,
                 'isi3': isi3,
                 'isi4': isi4,
+                'isi5': isi5,
                 'iti': iti_dur,
                 't_fixation': t_fixation,
                 't_rule1': t_rule1,
@@ -448,12 +458,12 @@ def main(sid: str) -> None:
 
     win = make_window()
     stimuli = load_stimuli(win)
-    fixation = visual.TextStim(win=win, pos=(0, 0), text='+', color='white', height=0.07)
+    fixation = visual.TextStim(win=win, pos=(0, 0), text='+', color='black', height=0.07)
 
     # Pre-create key labels (static across trials)
     key_labels = [
         visual.TextStim(win=win, text=key, pos=(SLOT_X[i], LABEL_Y),
-                        color='white', height=0.07)
+                        color='black', height=0.07)
         for i, key in enumerate(RESPONSE_KEYS)
     ]
 
@@ -471,29 +481,22 @@ def main(sid: str) -> None:
             win,
             'Working Memory Task\n\n'
             'You will see a shape, then pick the matching shape from 4 options.\n\n'
-            'Press SPACE to begin.'
+            'Press any button to continue.'
         )
+        wait_for_scanner(win)
         run_wm_task(win, stimuli, fixation, key_labels, writer, csv_file,
                     main_clock, rt_clock, sid, seed)
 
-        # Block 2: Rest
-        show_text_screen(
-            win,
-            'Rest (2 minutes)\n\n'
-            'Please fixate on the cross and relax.\n\n'
-            'Press SPACE to begin rest.'
-        )
-        run_rest(win, fixation)
-
-        # Block 3: Main task
+        # Block 2: Main task
         show_text_screen(
             win,
             'Main Task\n\n'
             'You will see a sequence of shapes that follow a pattern.\n'
             'Then you will see the start of a new sequence.\n'
             'Choose the shape that comes next.\n\n'
-            'Press SPACE to begin.'
+            'Press any button to continue.'
         )
+        wait_for_scanner(win)
         run_main_task(win, stimuli, fixation, key_labels, writer, csv_file,
                       main_clock, rt_clock, sid, seed + 1)
 
