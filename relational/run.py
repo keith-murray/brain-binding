@@ -15,7 +15,7 @@ ASSETS_DIR = Path(__file__).parent.parent / 'assets'
 
 WIN_SIZE = [1200, 1000]
 WIN_UNITS = 'norm'
-WIN_SCREEN = 1
+WIN_SCREEN = 0
 
 STIM_SIZE = (0.28, 0.37)
 STIM_POS = (0, 0.15)
@@ -54,7 +54,7 @@ MAX_STREAK = 3
 FIELDNAMES = [
     'block', 'sid', 'trial',
     'sample_stim', 'isi_condition',
-    'rule_type', 'A_stim', 'B_stim', 'rule_sequence', 'test_sequence',
+    'rule_type', 'A_stim', 'B_stim', 'A_prime', 'B_prime', 'rule_sequence', 'test_sequence',
     'correct_next_stim', 'slot_mapping', 'correct_stim',
     'response_key', 'response_slot', 'response_stim', 'correct', 'rt',
     'isi1', 'isi2', 'isi3', 'isi4', 'iti',
@@ -170,16 +170,18 @@ def gen_main_trials(seed: int) -> list:
         a, b, rule = cfg['A_stim'], cfg['B_stim'], cfg['rule_type']
         if rule == 'ABA':
             rule_seq = [a, b, a]
-            correct = a
         else:
             rule_seq = [a, b, b]
-            correct = b
+        a_prime, b_prime = rng.sample(STIM_NAMES, 2)  # A' ≠ B', can overlap with A or B
+        correct = a_prime if rule == 'ABA' else b_prime
         trials.append({
             'rule_type': rule,
             'A_stim': a,
             'B_stim': b,
+            'A_prime': a_prime,
+            'B_prime': b_prime,
             'rule_sequence': ','.join(rule_seq),
-            'test_sequence': f'{a},{b}',
+            'test_sequence': f'{a_prime},{b_prime}',
             'correct_next_stim': correct,
         })
     return trials
@@ -335,13 +337,15 @@ def run_main_task(win, stimuli, fixation, key_labels, writer, csv_file,
             rule_type = trial['rule_type']
             a_stim = trial['A_stim']
             b_stim = trial['B_stim']
+            a_prime = trial['A_prime']
+            b_prime = trial['B_prime']
             rule_seq = trial['rule_sequence'].split(',')
             test_seq = trial['test_sequence'].split(',')
             correct_next = trial['correct_next_stim']
 
             logging.data(
                 f'Main trial {t_idx} run {run_idx + 1}: '
-                f'rule={rule_type}, A={a_stim}, B={b_stim}'
+                f'rule={rule_type}, A={a_stim}, B={b_stim}, A\'={a_prime}, B\'={b_prime}'
             )
 
             isi1 = jitter(ISI_MEAN, ISI_SD, ISI_MIN)
@@ -397,6 +401,8 @@ def run_main_task(win, stimuli, fixation, key_labels, writer, csv_file,
                 'rule_type': rule_type,
                 'A_stim': a_stim,
                 'B_stim': b_stim,
+                'A_prime': a_prime,
+                'B_prime': b_prime,
                 'rule_sequence': trial['rule_sequence'],
                 'test_sequence': trial['test_sequence'],
                 'correct_next_stim': correct_next,
