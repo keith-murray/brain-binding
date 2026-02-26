@@ -1,0 +1,1046 @@
+0.0012 	INFO 	Starting session sid=c78c8ff0-6dc5-40b6-bbdc-d03e2c14a016, seed=456954614
+0.0015 	WARNING 	Monitor specification not found. Creating a temporary one...
+0.0139 	WARNING 	User requested fullscreen with size [1200 1000], but screen is actually [1280, 800]. Using actual size
+0.1841 	INFO 	Using renderer 'Intel(R) Arc(TM) 140V GPU (16GB)' for graphics
+0.1842 	INFO 	OpenGL version supported by driver is 4..
+2.6152 	EXP 	Created Window = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001ECAA056140>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001ECAA0560E0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1, 1, 1]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001ECAA0563E0>, multiSample=False, name='Window', numSamples=2, pos=(0, 0), screen=0, size=array([1280,  800]), stencilBits=0, stereo=False, title='PsychoPy', units='norm', useFBO=False, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+2.6153 	EXP 	Window: backgroundImage = None
+2.6154 	EXP 	Window: backgroundFit = 'cover'
+2.6979 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image=str(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.28, 0.37]), texRes=128, units='norm', win=Window(...))
+2.7304 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image=str(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.28, 0.37]), texRes=128, units='norm', win=Window(...))
+2.7738 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image=str(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.28, 0.37]), texRes=128, units='norm', win=Window(...))
+2.8153 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image=str(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.28, 0.37]), texRes=128, units='norm', win=Window(...))
+2.8798 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='norm', win=Window(...), wrapWidth=1)
+2.8842 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.65, -0.28]), rgb=UNKNOWN, text='1', units='norm', win=Window(...), wrapWidth=1)
+2.8885 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.22, -0.28]), rgb=UNKNOWN, text='2', units='norm', win=Window(...), wrapWidth=1)
+2.8932 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.22, -0.28]), rgb=UNKNOWN, text='3', units='norm', win=Window(...), wrapWidth=1)
+2.8978 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.65, -0.28]), rgb=UNKNOWN, text='4', units='norm', win=Window(...), wrapWidth=1)
+2.9543 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+4.6852 	DATA 	Keypress: space
+4.6901 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Waiting for scanner...', units='norm', win=Window(...), wrapWidth=1)
+6.3916 	DATA 	Keypress: equal
+6.3925 	DATA 	WM trial 0: sample=circle, isi=1.0
+8.9771 	DATA 	Keypress: 4
+8.9773 	DATA 	WM trial 0 response: key=4, rt=0.5481, correct=1
+8.9776 	DATA 	WM trial 1: sample=star, isi=1.0
+11.4646 	DATA 	Keypress: 1
+11.4647 	DATA 	WM trial 1 response: key=1, rt=0.4631, correct=1
+11.4871 	DATA 	WM trial 2: sample=star, isi=1.0
+13.9971 	DATA 	Keypress: 2
+13.9973 	DATA 	WM trial 2 response: key=2, rt=0.4777, correct=1
+13.9974 	DATA 	WM trial 3: sample=triangle, isi=1.0
+16.4985 	DATA 	Keypress: 4
+16.4989 	DATA 	WM trial 3 response: key=4, rt=0.4769, correct=1
+16.4990 	DATA 	WM trial 4: sample=star, isi=1.0
+18.9462 	DATA 	Keypress: 1
+18.9464 	DATA 	WM trial 4 response: key=1, rt=0.4192, correct=1
+18.9465 	DATA 	WM trial 5: sample=triangle, isi=1.0
+21.4846 	DATA 	Keypress: 2
+21.4848 	DATA 	WM trial 5 response: key=2, rt=0.5109, correct=1
+21.4849 	DATA 	WM trial 6: sample=rectangle, isi=1.0
+25.5089 	DATA 	No keypress (maxWait exceeded)
+25.5090 	WARNING 	WM trial 6 timeout
+25.5092 	DATA 	WM trial 7: sample=circle, isi=2.5
+29.5425 	DATA 	Keypress: 1
+29.5431 	DATA 	WM trial 7 response: key=1, rt=0.5067, correct=1
+29.5432 	DATA 	WM trial 8: sample=rectangle, isi=1.0
+32.1398 	DATA 	Keypress: 4
+32.1400 	DATA 	WM trial 8 response: key=4, rt=0.5728, correct=1
+32.1403 	DATA 	WM trial 9: sample=circle, isi=1.0
+34.6644 	DATA 	Keypress: 1
+34.6645 	DATA 	WM trial 9 response: key=1, rt=0.4995, correct=1
+34.6647 	DATA 	WM trial 10: sample=circle, isi=1.0
+37.1359 	DATA 	Keypress: 3
+37.1360 	DATA 	WM trial 10 response: key=3, rt=0.4505, correct=1
+37.1362 	DATA 	WM trial 11: sample=star, isi=2.5
+41.2332 	DATA 	Keypress: 1
+41.2334 	DATA 	WM trial 11 response: key=1, rt=0.5739, correct=1
+41.2336 	DATA 	WM trial 12: sample=circle, isi=2.5
+46.7534 	DATA 	No keypress (maxWait exceeded)
+46.7534 	WARNING 	WM trial 12 timeout
+46.7535 	DATA 	WM trial 13: sample=rectangle, isi=2.5
+52.2771 	DATA 	No keypress (maxWait exceeded)
+52.2771 	WARNING 	WM trial 13 timeout
+52.2773 	DATA 	WM trial 14: sample=rectangle, isi=1.0
+56.3021 	DATA 	No keypress (maxWait exceeded)
+56.3021 	WARNING 	WM trial 14 timeout
+56.3022 	DATA 	WM trial 15: sample=triangle, isi=2.5
+61.8265 	DATA 	No keypress (maxWait exceeded)
+61.8266 	WARNING 	WM trial 15 timeout
+61.8269 	DATA 	WM trial 16: sample=rectangle, isi=2.5
+66.3727 	DATA 	Keypress: 4
+66.3730 	DATA 	WM trial 16 response: key=4, rt=1.0193, correct=0
+66.3732 	DATA 	WM trial 17: sample=triangle, isi=2.5
+70.3778 	DATA 	Keypress: 4
+70.3780 	DATA 	WM trial 17 response: key=4, rt=0.4818, correct=0
+70.3782 	DATA 	WM trial 18: sample=triangle, isi=2.5
+73.0061 	DATA 	Keypress: 4
+73.6904 	DATA 	Keypress: 4
+74.1829 	DATA 	Keypress: 4
+74.1833 	DATA 	WM trial 18 response: key=4, rt=0.2817, correct=0
+74.1834 	DATA 	WM trial 19: sample=triangle, isi=1.0
+74.4358 	DATA 	Keypress: 4
+74.7020 	DATA 	Keypress: 4
+74.9428 	DATA 	Keypress: 4
+75.1616 	DATA 	Keypress: 4
+75.3883 	DATA 	Keypress: 4
+75.6278 	DATA 	Keypress: 4
+75.9107 	DATA 	Keypress: 4
+76.1559 	DATA 	Keypress: 4
+76.4271 	DATA 	Keypress: 4
+76.4273 	DATA 	WM trial 19 response: key=4, rt=0.2177, correct=0
+76.4274 	DATA 	WM trial 20: sample=star, isi=2.5
+76.6737 	DATA 	Keypress: 4
+77.0212 	DATA 	Keypress: 4
+77.2901 	DATA 	Keypress: 4
+77.6546 	DATA 	Keypress: 4
+77.9567 	DATA 	Keypress: 4
+78.2761 	DATA 	Keypress: 4
+78.5956 	DATA 	Keypress: 4
+78.8908 	DATA 	Keypress: 4
+79.1610 	DATA 	Keypress: 4
+79.3929 	DATA 	Keypress: 4
+79.5606 	DATA 	Keypress: 4
+79.7295 	DATA 	Keypress: 4
+79.8898 	DATA 	Keypress: 4
+80.0610 	DATA 	Keypress: 4
+80.0614 	DATA 	WM trial 20 response: key=4, rt=0.1044, correct=1
+80.0615 	DATA 	WM trial 21: sample=rectangle, isi=2.5
+80.2008 	DATA 	Keypress: 4
+80.3369 	DATA 	Keypress: 4
+80.4876 	DATA 	Keypress: 4
+80.6337 	DATA 	Keypress: 4
+80.7810 	DATA 	Keypress: 4
+80.9327 	DATA 	Keypress: 4
+81.0874 	DATA 	Keypress: 4
+81.2444 	DATA 	Keypress: 4
+81.3986 	DATA 	Keypress: 4
+81.5669 	DATA 	Keypress: 4
+81.7252 	DATA 	Keypress: 4
+81.8967 	DATA 	Keypress: 4
+82.0756 	DATA 	Keypress: 4
+82.2561 	DATA 	Keypress: 4
+82.4325 	DATA 	Keypress: 4
+82.6207 	DATA 	Keypress: 4
+82.7894 	DATA 	Keypress: 4
+82.9787 	DATA 	Keypress: 4
+83.1795 	DATA 	Keypress: 4
+83.3573 	DATA 	Keypress: 4
+83.5845 	DATA 	Keypress: 4
+83.7735 	DATA 	Keypress: 4
+83.7738 	DATA 	WM trial 21 response: key=4, rt=0.1847, correct=1
+83.7739 	DATA 	WM trial 22: sample=star, isi=2.5
+83.9707 	DATA 	Keypress: 4
+84.1485 	DATA 	Keypress: 4
+84.3258 	DATA 	Keypress: 4
+84.5053 	DATA 	Keypress: 4
+84.6805 	DATA 	Keypress: 4
+84.8605 	DATA 	Keypress: 4
+85.0280 	DATA 	Keypress: 4
+85.2076 	DATA 	Keypress: 4
+85.3852 	DATA 	Keypress: 4
+85.5736 	DATA 	Keypress: 4
+85.7516 	DATA 	Keypress: 4
+85.9494 	DATA 	Keypress: 4
+86.1457 	DATA 	Keypress: 4
+86.3336 	DATA 	Keypress: 4
+86.5188 	DATA 	Keypress: 4
+86.7279 	DATA 	Keypress: 4
+86.9252 	DATA 	Keypress: 4
+87.1304 	DATA 	Keypress: 4
+87.3308 	DATA 	Keypress: 4
+87.3311 	DATA 	WM trial 22 response: key=4, rt=0.0317, correct=0
+87.3313 	DATA 	WM trial 23: sample=circle, isi=2.5
+87.5383 	DATA 	Keypress: 4
+87.7292 	DATA 	Keypress: 4
+87.9359 	DATA 	Keypress: 4
+88.1447 	DATA 	Keypress: 4
+89.2820 	DATA 	Keypress: 4
+90.4022 	DATA 	Keypress: 4
+90.5807 	DATA 	Keypress: 4
+90.7556 	DATA 	Keypress: 4
+90.9373 	DATA 	Keypress: 4
+90.9375 	DATA 	WM trial 23 response: key=4, rt=0.0793, correct=0
+90.9517 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+91.1071 	DATA 	Keypress: 4
+91.1126 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Waiting for scanner...', units='norm', win=Window(...), wrapWidth=1)
+91.2899 	DATA 	Keypress: 4
+92.1173 	DATA 	Keypress: 4
+92.3022 	DATA 	Keypress: 4
+92.4540 	DATA 	Keypress: 4
+92.6003 	DATA 	Keypress: 4
+93.3163 	DATA 	Keypress: equal
+93.3175 	DATA 	Main trial 0 run 1: rule=ABA, A=triangle, B=rectangle, A'=rectangle, B'=star
+101.7278 	DATA 	Keypress: 3
+101.7283 	DATA 	Main trial 0 response: key=3, rt=0.5698, correct=1
+102.6988 	DATA 	Main trial 1 run 1: rule=ABB, A=circle, B=triangle, A'=circle, B'=triangle
+112.8699 	DATA 	Keypress: 2
+112.8703 	DATA 	Main trial 1 response: key=2, rt=1.8203, correct=0
+118.3453 	DATA 	Main trial 2 run 1: rule=ABA, A=rectangle, B=circle, A'=triangle, B'=star
+126.5030 	DATA 	Keypress: 3
+126.5032 	DATA 	Main trial 2 response: key=3, rt=0.4997, correct=1
+128.1776 	DATA 	Main trial 3 run 1: rule=ABA, A=circle, B=triangle, A'=rectangle, B'=triangle
+136.5267 	DATA 	Keypress: 4
+136.5269 	DATA 	Main trial 3 response: key=4, rt=0.5142, correct=1
+140.1442 	DATA 	Main trial 4 run 1: rule=ABB, A=star, B=rectangle, A'=triangle, B'=star
+148.2379 	DATA 	Keypress: 1
+148.2381 	DATA 	Main trial 4 response: key=1, rt=0.3916, correct=1
+151.8036 	DATA 	Main trial 5 run 1: rule=ABB, A=star, B=rectangle, A'=rectangle, B'=star
+160.3894 	DATA 	Keypress: 4
+160.3897 	DATA 	Main trial 5 response: key=4, rt=0.3976, correct=1
+163.9210 	DATA 	Main trial 6 run 1: rule=ABB, A=star, B=circle, A'=star, B'=triangle
+172.1239 	DATA 	Keypress: 1
+172.1244 	DATA 	Main trial 6 response: key=1, rt=0.4373, correct=1
+176.2579 	DATA 	Main trial 7 run 1: rule=ABA, A=rectangle, B=circle, A'=circle, B'=star
+185.3943 	DATA 	Keypress: 3
+185.3945 	DATA 	Main trial 7 response: key=3, rt=0.4754, correct=1
+187.6552 	DATA 	Main trial 8 run 1: rule=ABB, A=rectangle, B=star, A'=rectangle, B'=triangle
+196.0946 	DATA 	Keypress: 1
+196.0948 	DATA 	Main trial 8 response: key=1, rt=1.3034, correct=0
+197.5202 	DATA 	Main trial 9 run 1: rule=ABB, A=rectangle, B=triangle, A'=triangle, B'=rectangle
+205.9183 	DATA 	Keypress: 1
+205.9185 	DATA 	Main trial 9 response: key=1, rt=0.4355, correct=0
+207.9301 	DATA 	Main trial 10 run 1: rule=ABB, A=circle, B=star, A'=circle, B'=rectangle
+217.6328 	DATA 	No keypress (maxWait exceeded)
+217.6328 	WARNING 	Main trial 10 timeout
+217.8518 	DATA 	Keypress: 1
+218.0948 	DATA 	Keypress: 1
+221.8739 	DATA 	Main trial 11 run 1: rule=ABA, A=triangle, B=star, A'=star, B'=triangle
+227.9877 	DATA 	Keypress: 1
+229.5615 	DATA 	Keypress: 1
+231.3845 	DATA 	Keypress: 1
+231.3847 	DATA 	Main trial 11 response: key=1, rt=0.3124, correct=1
+233.7119 	DATA 	Main trial 12 run 1: rule=ABB, A=rectangle, B=star, A'=star, B'=triangle
+243.3040 	DATA 	Keypress: 1
+243.3042 	DATA 	Main trial 12 response: key=1, rt=0.9061, correct=0
+244.8742 	DATA 	Main trial 13 run 1: rule=ABA, A=triangle, B=rectangle, A'=star, B'=rectangle
+253.7601 	DATA 	Keypress: 1
+253.7604 	DATA 	Main trial 13 response: key=1, rt=0.3144, correct=0
+255.7474 	DATA 	Main trial 14 run 1: rule=ABA, A=star, B=triangle, A'=rectangle, B'=triangle
+266.1694 	DATA 	No keypress (maxWait exceeded)
+266.1694 	WARNING 	Main trial 14 timeout
+267.8364 	DATA 	Main trial 15 run 1: rule=ABB, A=rectangle, B=circle, A'=triangle, B'=star
+276.2575 	DATA 	Keypress: 1
+276.2579 	DATA 	Main trial 15 response: key=1, rt=0.4012, correct=0
+280.1428 	DATA 	Main trial 16 run 1: rule=ABA, A=circle, B=triangle, A'=triangle, B'=rectangle
+287.1295 	DATA 	Keypress: 1
+287.7250 	DATA 	Keypress: 1
+288.3503 	DATA 	Keypress: equal
+289.1134 	DATA 	Keypress: equal
+289.9630 	DATA 	Keypress: equal
+290.4195 	DATA 	No keypress (maxWait exceeded)
+290.4196 	WARNING 	Main trial 16 timeout
+291.0311 	DATA 	Keypress: equal
+292.0405 	DATA 	Keypress: equal
+292.6915 	DATA 	Main trial 17 run 1: rule=ABB, A=triangle, B=star, A'=triangle, B'=star
+294.2466 	DATA 	Keypress: equal
+294.4353 	DATA 	Keypress: equal
+294.6048 	DATA 	Keypress: equal
+294.7657 	DATA 	Keypress: equal
+294.9246 	DATA 	Keypress: equal
+295.0734 	DATA 	Keypress: equal
+295.2156 	DATA 	Keypress: equal
+295.3737 	DATA 	Keypress: equal
+295.5119 	DATA 	Keypress: equal
+295.6796 	DATA 	Keypress: equal
+295.8155 	DATA 	Keypress: equal
+295.9864 	DATA 	Keypress: equal
+296.1232 	DATA 	Keypress: equal
+296.2793 	DATA 	Keypress: equal
+296.3965 	DATA 	Keypress: equal
+296.5523 	DATA 	Keypress: equal
+296.6933 	DATA 	Keypress: equal
+296.8505 	DATA 	Keypress: equal
+297.0197 	DATA 	Keypress: equal
+297.1565 	DATA 	Keypress: equal
+297.3250 	DATA 	Keypress: equal
+297.5316 	DATA 	Keypress: equal
+297.7419 	DATA 	Keypress: equal
+297.9965 	DATA 	Keypress: equal
+298.2779 	DATA 	Keypress: equal
+298.5325 	DATA 	Keypress: equal
+298.7447 	DATA 	Keypress: equal
+298.9474 	DATA 	Keypress: equal
+299.1928 	DATA 	Keypress: equal
+300.2467 	DATA 	Keypress: equal
+300.3792 	DATA 	Keypress: equal
+300.5449 	DATA 	Keypress: equal
+300.6814 	DATA 	Keypress: equal
+300.8403 	DATA 	Keypress: equal
+300.9751 	DATA 	Keypress: equal
+301.1224 	DATA 	Keypress: equal
+301.2880 	DATA 	Keypress: equal
+301.4342 	DATA 	Keypress: equal
+301.5748 	DATA 	Keypress: equal
+301.7125 	DATA 	Keypress: equal
+301.8544 	DATA 	Keypress: equal
+301.9970 	DATA 	Keypress: equal
+302.1477 	DATA 	Keypress: equal
+302.2718 	DATA 	Keypress: equal
+302.4021 	DATA 	Keypress: equal
+302.8184 	DATA 	Keypress: equal
+302.9064 	DATA 	Keypress: equal
+303.0522 	DATA 	Keypress: equal
+303.1805 	DATA 	Keypress: equal
+303.3002 	DATA 	Keypress: equal
+303.4133 	DATA 	Keypress: equal
+303.5304 	DATA 	Keypress: equal
+303.6468 	DATA 	Keypress: equal
+303.6609 	DATA 	No keypress (maxWait exceeded)
+303.6609 	WARNING 	Main trial 17 timeout
+303.7803 	DATA 	Keypress: equal
+303.8970 	DATA 	Keypress: equal
+304.0221 	DATA 	Keypress: equal
+304.1276 	DATA 	Keypress: equal
+304.2451 	DATA 	Keypress: equal
+304.3701 	DATA 	Keypress: equal
+305.2929 	DATA 	Main trial 18 run 1: rule=ABB, A=rectangle, B=circle, A'=triangle, B'=rectangle
+308.0028 	DATA 	Keypress: 1
+310.7002 	DATA 	Keypress: 1
+313.7838 	DATA 	Keypress: 1
+313.7841 	DATA 	Main trial 18 response: key=1, rt=0.3546, correct=0
+314.4191 	DATA 	Main trial 19 run 1: rule=ABA, A=star, B=triangle, A'=star, B'=circle
+317.4290 	DATA 	Keypress: space
+317.5782 	DATA 	Keypress: space
+317.7250 	DATA 	Keypress: space
+317.8813 	DATA 	Keypress: space
+318.0378 	DATA 	Keypress: space
+318.1732 	DATA 	Keypress: space
+318.3331 	DATA 	Keypress: space
+318.4723 	DATA 	Keypress: space
+318.6312 	DATA 	Keypress: space
+318.7877 	DATA 	Keypress: space
+318.9451 	DATA 	Keypress: space
+319.1071 	DATA 	Keypress: space
+319.2647 	DATA 	Keypress: space
+319.4238 	DATA 	Keypress: space
+319.5901 	DATA 	Keypress: space
+319.7273 	DATA 	Keypress: space
+319.8751 	DATA 	Keypress: space
+320.0459 	DATA 	Keypress: space
+320.2280 	DATA 	Keypress: space
+320.3968 	DATA 	Keypress: space
+320.5477 	DATA 	Keypress: space
+320.7102 	DATA 	Keypress: space
+320.8571 	DATA 	Keypress: space
+321.0224 	DATA 	Keypress: space
+321.1809 	DATA 	Keypress: space
+321.3471 	DATA 	Keypress: space
+321.5045 	DATA 	Keypress: space
+321.6766 	DATA 	Keypress: space
+321.8342 	DATA 	Keypress: space
+321.9941 	DATA 	Keypress: space
+322.1606 	DATA 	Keypress: space
+322.3290 	DATA 	Keypress: space
+322.5064 	DATA 	Keypress: space
+322.6669 	DATA 	Keypress: space
+322.8279 	DATA 	Keypress: space
+322.9857 	DATA 	Keypress: space
+323.1656 	DATA 	Keypress: space
+323.3439 	DATA 	Keypress: space
+323.5168 	DATA 	Keypress: space
+323.6773 	DATA 	Keypress: space
+323.8329 	DATA 	Keypress: space
+323.9904 	DATA 	Keypress: space
+324.1490 	DATA 	Keypress: space
+324.3321 	DATA 	Keypress: space
+324.4976 	DATA 	Keypress: space
+324.6654 	DATA 	Keypress: space
+324.8068 	DATA 	Keypress: space
+324.9732 	DATA 	Keypress: space
+325.0551 	DATA 	No keypress (maxWait exceeded)
+325.0551 	WARNING 	Main trial 19 timeout
+325.1531 	DATA 	Keypress: space
+325.3183 	DATA 	Keypress: space
+325.4867 	DATA 	Keypress: space
+325.6616 	DATA 	Keypress: space
+325.8608 	DATA 	Keypress: space
+326.0502 	DATA 	Keypress: space
+326.2158 	DATA 	Keypress: space
+326.3844 	DATA 	Keypress: space
+326.5292 	DATA 	Keypress: space
+326.7282 	DATA 	Keypress: space
+326.9041 	DATA 	Keypress: space
+327.0818 	DATA 	Keypress: space
+327.2628 	DATA 	Keypress: space
+327.4295 	DATA 	Keypress: space
+327.5843 	DATA 	Keypress: space
+327.7405 	DATA 	Keypress: space
+327.8989 	DATA 	Keypress: space
+328.0686 	DATA 	Keypress: space
+328.2459 	DATA 	Keypress: space
+328.3718 	DATA 	Keypress: space
+329.2400 	DATA 	Main trial 20 run 1: rule=ABB, A=star, B=circle, A'=star, B'=triangle
+338.4343 	DATA 	Mouse: Right button down, pos=(788,563)
+338.6788 	DATA 	Mouse:  Right button up, pos=(788,563)
+339.7627 	DATA 	No keypress (maxWait exceeded)
+339.7627 	WARNING 	Main trial 20 timeout
+342.4948 	DATA 	Main trial 21 run 1: rule=ABA, A=star, B=rectangle, A'=triangle, B'=rectangle
+345.2716 	DATA 	Keypress: 1
+345.6607 	DATA 	Keypress: 1
+346.2959 	DATA 	Keypress: 1
+346.9677 	DATA 	Keypress: 1
+347.7662 	DATA 	Keypress: 1
+348.0986 	DATA 	Keypress: 1
+348.3989 	DATA 	Keypress: 1
+348.7437 	DATA 	Keypress: 1
+349.0353 	DATA 	Keypress: 1
+349.2952 	DATA 	Keypress: 1
+349.5723 	DATA 	Keypress: 1
+352.3766 	DATA 	Keypress: 1
+352.3772 	DATA 	Main trial 21 response: key=1, rt=1.7435, correct=0
+352.8818 	DATA 	Keypress: 1
+353.7303 	DATA 	Main trial 22 run 1: rule=ABB, A=rectangle, B=circle, A'=circle, B'=star
+355.0189 	DATA 	Keypress: lshift
+355.2373 	DATA 	Keypress: k
+355.4376 	DATA 	Keypress: e
+355.5450 	DATA 	Keypress: i
+355.6308 	DATA 	Keypress: t
+355.7096 	DATA 	Keypress: h
+355.7709 	DATA 	Keypress: space
+355.9183 	DATA 	Keypress: i
+356.0141 	DATA 	Keypress: s
+356.0803 	DATA 	Keypress: space
+356.1832 	DATA 	Keypress: a
+356.2623 	DATA 	Keypress: space
+356.3872 	DATA 	Keypress: l
+356.4727 	DATA 	Keypress: e
+356.6417 	DATA 	Keypress: g
+356.7243 	DATA 	Keypress: e
+356.8565 	DATA 	Keypress: n
+356.9607 	DATA 	Keypress: d
+357.1234 	DATA 	Keypress: space
+358.4789 	DATA 	Keypress: h
+358.5523 	DATA 	Keypress: e
+358.6380 	DATA 	Keypress: apostrophe
+358.7000 	DATA 	Keypress: s
+358.7830 	DATA 	Keypress: space
+358.8449 	DATA 	Keypress: t
+358.9220 	DATA 	Keypress: h
+358.9659 	DATA 	Keypress: e
+359.0617 	DATA 	Keypress: space
+359.1908 	DATA 	Keypress: b
+359.2351 	DATA 	Keypress: e
+359.2962 	DATA 	Keypress: s
+359.4270 	DATA 	Keypress: t
+359.5551 	DATA 	Keypress: lshift
+359.6799 	DATA 	Keypress: 1
+359.9430 	DATA 	Keypress: space
+360.2341 	DATA 	Keypress: lshift
+360.6481 	DATA 	Keypress: i
+360.7934 	DATA 	Keypress: space
+360.9428 	DATA 	Keypress: l
+361.1096 	DATA 	Keypress: o
+361.2477 	DATA 	Keypress: v
+361.3016 	DATA 	Keypress: e
+361.4645 	DATA 	Keypress: space
+361.7077 	DATA 	Keypress: y
+361.9417 	DATA 	Keypress: apostrophe
+362.3038 	DATA 	Keypress: a
+362.4419 	DATA 	Keypress: l
+362.5801 	DATA 	Keypress: l
+362.7558 	DATA 	Keypress: l
+363.4130 	DATA 	Keypress: backspace
+363.6505 	DATA 	Keypress: lshift
+363.7233 	DATA 	Keypress: 1
+363.7236 	DATA 	Main trial 22 response: key=1, rt=1.4203, correct=0
+364.6842 	DATA 	Keypress: return
+367.0929 	DATA 	Main trial 23 run 1: rule=ABA, A=star, B=rectangle, A'=star, B'=circle
+376.9755 	DATA 	No keypress (maxWait exceeded)
+376.9755 	WARNING 	Main trial 23 timeout
+380.2764 	DATA 	Main trial 24 run 1: rule=ABB, A=circle, B=star, A'=rectangle, B'=triangle
+390.1379 	DATA 	No keypress (maxWait exceeded)
+390.1380 	WARNING 	Main trial 24 timeout
+392.4231 	DATA 	Main trial 25 run 1: rule=ABA, A=circle, B=rectangle, A'=star, B'=triangle
+400.6611 	DATA 	Keypress: 1
+400.6616 	DATA 	Main trial 25 response: key=1, rt=0.7033, correct=0
+403.6714 	DATA 	Main trial 26 run 1: rule=ABB, A=rectangle, B=star, A'=triangle, B'=circle
+411.8722 	DATA 	Keypress: 1
+413.2048 	DATA 	Keypress: 1
+413.2049 	DATA 	Main trial 26 response: key=1, rt=1.0306, correct=0
+417.3831 	DATA 	Main trial 27 run 1: rule=ABA, A=star, B=rectangle, A'=circle, B'=star
+423.0217 	DATA 	Keypress: 1
+424.2317 	DATA 	Keypress: 1
+425.1941 	DATA 	Keypress: 1
+425.1944 	DATA 	Main trial 27 response: key=1, rt=0.0965, correct=0
+426.1108 	DATA 	Keypress: 1
+426.9989 	DATA 	Keypress: 1
+427.8481 	DATA 	Keypress: 1
+428.5298 	DATA 	Keypress: 1
+428.7692 	DATA 	Main trial 28 run 1: rule=ABA, A=circle, B=rectangle, A'=rectangle, B'=star
+428.8897 	DATA 	Keypress: 1
+429.1816 	DATA 	Keypress: 1
+429.5297 	DATA 	Keypress: 1
+429.9621 	DATA 	Keypress: 1
+430.2453 	DATA 	Keypress: 1
+430.5936 	DATA 	Keypress: 1
+431.1737 	DATA 	Keypress: 1
+431.5380 	DATA 	Keypress: 1
+431.8810 	DATA 	Keypress: 1
+432.7356 	DATA 	Keypress: 1
+433.1928 	DATA 	Keypress: 1
+433.5826 	DATA 	Keypress: 1
+434.0803 	DATA 	Keypress: 1
+434.5261 	DATA 	Keypress: 1
+434.9782 	DATA 	Keypress: 1
+435.2957 	DATA 	Keypress: 1
+435.7432 	DATA 	Keypress: 1
+436.1415 	DATA 	Keypress: 1
+436.1418 	DATA 	Main trial 28 response: key=1, rt=0.0055, correct=0
+436.5099 	DATA 	Keypress: 1
+436.9677 	DATA 	Keypress: 1
+437.3942 	DATA 	Keypress: 1
+437.7687 	DATA 	Keypress: 1
+438.1966 	DATA 	Keypress: 1
+439.7539 	DATA 	Main trial 29 run 1: rule=ABA, A=triangle, B=star, A'=circle, B'=rectangle
+440.7624 	DATA 	Keypress: 1
+443.6400 	DATA 	Keypress: 1
+444.6137 	DATA 	Keypress: 1
+444.9421 	DATA 	Keypress: 1
+449.5963 	DATA 	No keypress (maxWait exceeded)
+449.5963 	WARNING 	Main trial 29 timeout
+452.3923 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+479.9557 	DATA 	Keypress: space
+479.9561 	DATA 	Main trial 30 run 2: rule=ABB, A=star, B=triangle, A'=rectangle, B'=star
+489.6863 	DATA 	No keypress (maxWait exceeded)
+489.6863 	WARNING 	Main trial 30 timeout
+491.1743 	DATA 	Main trial 31 run 2: rule=ABA, A=circle, B=triangle, A'=rectangle, B'=star
+500.4169 	DATA 	No keypress (maxWait exceeded)
+500.4169 	WARNING 	Main trial 31 timeout
+502.7487 	DATA 	Main trial 32 run 2: rule=ABA, A=triangle, B=circle, A'=star, B'=triangle
+511.9904 	DATA 	Keypress: space
+512.5249 	DATA 	No keypress (maxWait exceeded)
+512.5249 	WARNING 	Main trial 32 timeout
+512.6438 	DATA 	Keypress: space
+514.4201 	DATA 	Main trial 33 run 2: rule=ABA, A=rectangle, B=triangle, A'=triangle, B'=star
+524.5799 	DATA 	No keypress (maxWait exceeded)
+524.5799 	WARNING 	Main trial 33 timeout
+528.1463 	DATA 	Main trial 34 run 2: rule=ABB, A=circle, B=triangle, A'=rectangle, B'=star
+537.9143 	DATA 	No keypress (maxWait exceeded)
+537.9144 	WARNING 	Main trial 34 timeout
+540.6156 	DATA 	Main trial 35 run 2: rule=ABA, A=circle, B=star, A'=star, B'=circle
+551.2703 	DATA 	No keypress (maxWait exceeded)
+551.2703 	WARNING 	Main trial 35 timeout
+554.0793 	DATA 	Keypress: space
+554.7320 	DATA 	Main trial 36 run 2: rule=ABA, A=circle, B=rectangle, A'=star, B'=rectangle
+564.7998 	DATA 	Keypress: 1
+564.8002 	DATA 	Main trial 36 response: key=1, rt=1.9460, correct=0
+565.0320 	DATA 	Keypress: 1
+565.2131 	DATA 	Keypress: 1
+565.3701 	DATA 	Keypress: 1
+565.5255 	DATA 	Keypress: 1
+565.6848 	DATA 	Keypress: 1
+565.8252 	DATA 	Keypress: 1
+565.9944 	DATA 	Keypress: 1
+566.5651 	DATA 	Keypress: 1
+566.7443 	DATA 	Keypress: 1
+566.9007 	DATA 	Keypress: 1
+567.0708 	DATA 	Keypress: 1
+567.2587 	DATA 	Keypress: 1
+568.5998 	DATA 	Main trial 37 run 2: rule=ABA, A=circle, B=rectangle, A'=rectangle, B'=star
+579.0964 	DATA 	No keypress (maxWait exceeded)
+579.0964 	WARNING 	Main trial 37 timeout
+582.2656 	DATA 	Keypress: equal
+582.4151 	DATA 	Keypress: equal
+582.5511 	DATA 	Keypress: equal
+582.6851 	DATA 	Keypress: equal
+582.8304 	DATA 	Keypress: equal
+582.9779 	DATA 	Keypress: equal
+583.1111 	DATA 	Main trial 38 run 2: rule=ABB, A=triangle, B=rectangle, A'=rectangle, B'=triangle
+583.1300 	DATA 	Keypress: equal
+583.2778 	DATA 	Keypress: equal
+583.4336 	DATA 	Keypress: equal
+583.5957 	DATA 	Keypress: equal
+583.7661 	DATA 	Keypress: equal
+583.9279 	DATA 	Keypress: equal
+584.0985 	DATA 	Keypress: equal
+584.2737 	DATA 	Keypress: equal
+584.4616 	DATA 	Keypress: equal
+584.6500 	DATA 	Keypress: equal
+584.8358 	DATA 	Keypress: equal
+585.0181 	DATA 	Keypress: equal
+585.1966 	DATA 	Keypress: equal
+585.3852 	DATA 	Keypress: equal
+585.5672 	DATA 	Keypress: equal
+585.7564 	DATA 	Keypress: equal
+585.9286 	DATA 	Keypress: equal
+586.1268 	DATA 	Keypress: equal
+586.2970 	DATA 	Keypress: equal
+586.4780 	DATA 	Keypress: equal
+586.6599 	DATA 	Keypress: equal
+586.8719 	DATA 	Keypress: equal
+587.0599 	DATA 	Keypress: equal
+587.2388 	DATA 	Keypress: equal
+587.3960 	DATA 	Keypress: equal
+587.5554 	DATA 	Keypress: equal
+587.7034 	DATA 	Keypress: equal
+587.8604 	DATA 	Keypress: equal
+588.0325 	DATA 	Keypress: equal
+588.2176 	DATA 	Keypress: equal
+588.4066 	DATA 	Keypress: equal
+588.5858 	DATA 	Keypress: equal
+588.7841 	DATA 	Keypress: equal
+588.9628 	DATA 	Keypress: equal
+589.1391 	DATA 	Keypress: equal
+589.3252 	DATA 	Keypress: equal
+589.4810 	DATA 	Keypress: equal
+589.6549 	DATA 	Keypress: equal
+589.8752 	DATA 	Keypress: equal
+590.1018 	DATA 	Keypress: equal
+590.3161 	DATA 	Keypress: equal
+590.4853 	DATA 	Keypress: equal
+590.6433 	DATA 	Keypress: equal
+590.7707 	DATA 	Keypress: equal
+590.9095 	DATA 	Keypress: equal
+591.0533 	DATA 	Keypress: equal
+591.1746 	DATA 	Keypress: equal
+593.2358 	DATA 	No keypress (maxWait exceeded)
+593.2359 	WARNING 	Main trial 38 timeout
+596.1800 	DATA 	Main trial 39 run 2: rule=ABA, A=triangle, B=rectangle, A'=circle, B'=triangle
+606.4203 	DATA 	No keypress (maxWait exceeded)
+606.4203 	WARNING 	Main trial 39 timeout
+609.7296 	DATA 	Main trial 40 run 2: rule=ABA, A=triangle, B=rectangle, A'=star, B'=rectangle
+619.4050 	DATA 	No keypress (maxWait exceeded)
+619.4051 	WARNING 	Main trial 40 timeout
+622.7177 	DATA 	Main trial 41 run 2: rule=ABA, A=triangle, B=circle, A'=rectangle, B'=star
+626.2794 	DATA 	Keypress: space
+626.4499 	DATA 	Keypress: space
+626.6006 	DATA 	Keypress: space
+626.7488 	DATA 	Keypress: space
+626.9077 	DATA 	Keypress: space
+627.0573 	DATA 	Keypress: space
+627.2136 	DATA 	Keypress: space
+627.3720 	DATA 	Keypress: space
+627.5279 	DATA 	Keypress: space
+627.6840 	DATA 	Keypress: space
+627.8585 	DATA 	Keypress: space
+628.0237 	DATA 	Keypress: space
+628.1883 	DATA 	Keypress: space
+628.3540 	DATA 	Keypress: space
+628.5214 	DATA 	Keypress: space
+628.6787 	DATA 	Keypress: space
+628.8367 	DATA 	Keypress: space
+629.0114 	DATA 	Keypress: space
+629.1742 	DATA 	Keypress: space
+629.3415 	DATA 	Keypress: space
+629.5242 	DATA 	Keypress: space
+629.6934 	DATA 	Keypress: space
+629.8623 	DATA 	Keypress: space
+630.0341 	DATA 	Keypress: space
+630.2119 	DATA 	Keypress: space
+630.4007 	DATA 	Keypress: space
+630.5722 	DATA 	Keypress: space
+630.7480 	DATA 	Keypress: space
+630.9372 	DATA 	Keypress: space
+631.1164 	DATA 	Keypress: space
+631.3002 	DATA 	Keypress: space
+631.4810 	DATA 	Keypress: space
+631.6449 	DATA 	Keypress: space
+631.8174 	DATA 	Keypress: space
+632.0104 	DATA 	Keypress: space
+632.1941 	DATA 	Keypress: space
+632.3806 	DATA 	Keypress: space
+632.7745 	DATA 	No keypress (maxWait exceeded)
+632.7745 	WARNING 	Main trial 41 timeout
+633.8505 	DATA 	Keypress: space
+634.0277 	DATA 	Keypress: space
+634.2158 	DATA 	Keypress: space
+634.4420 	DATA 	Main trial 42 run 2: rule=ABB, A=star, B=triangle, A'=rectangle, B'=circle
+634.7651 	DATA 	Keypress: space
+635.0065 	DATA 	Keypress: space
+635.1939 	DATA 	Keypress: space
+635.3763 	DATA 	Keypress: space
+635.5640 	DATA 	Keypress: space
+635.7215 	DATA 	Keypress: space
+635.9081 	DATA 	Keypress: space
+636.1185 	DATA 	Keypress: space
+636.5554 	DATA 	Keypress: space
+636.7243 	DATA 	Keypress: space
+636.9217 	DATA 	Keypress: space
+637.0998 	DATA 	Keypress: space
+637.2890 	DATA 	Keypress: space
+637.4790 	DATA 	Keypress: space
+637.8837 	DATA 	Keypress: space
+638.0945 	DATA 	Keypress: space
+638.3080 	DATA 	Keypress: space
+638.7950 	DATA 	Keypress: space
+638.9848 	DATA 	Keypress: space
+639.1993 	DATA 	Keypress: space
+639.3880 	DATA 	Keypress: space
+639.5721 	DATA 	Keypress: space
+639.7647 	DATA 	Keypress: space
+639.9523 	DATA 	Keypress: space
+640.1431 	DATA 	Keypress: space
+640.3315 	DATA 	Keypress: space
+640.5085 	DATA 	Keypress: space
+640.6610 	DATA 	Keypress: space
+640.8611 	DATA 	Keypress: space
+641.0577 	DATA 	Keypress: space
+642.0572 	DATA 	Keypress: equal
+642.2129 	DATA 	Keypress: equal
+642.3862 	DATA 	Keypress: equal
+642.5579 	DATA 	Keypress: equal
+642.7352 	DATA 	Keypress: equal
+642.9078 	DATA 	Keypress: equal
+643.0965 	DATA 	Keypress: equal
+643.2778 	DATA 	Keypress: equal
+643.4705 	DATA 	Keypress: equal
+643.6443 	DATA 	Keypress: equal
+643.8447 	DATA 	Keypress: equal
+644.0169 	DATA 	Keypress: equal
+644.2030 	DATA 	Keypress: equal
+644.3429 	DATA 	No keypress (maxWait exceeded)
+644.3429 	WARNING 	Main trial 42 timeout
+644.3986 	DATA 	Keypress: equal
+644.5987 	DATA 	Keypress: equal
+644.7830 	DATA 	Keypress: equal
+644.9829 	DATA 	Keypress: equal
+645.1750 	DATA 	Keypress: equal
+645.3838 	DATA 	Keypress: equal
+645.5821 	DATA 	Keypress: equal
+645.7923 	DATA 	Keypress: equal
+646.0118 	DATA 	Keypress: equal
+646.2309 	DATA 	Keypress: equal
+646.4414 	DATA 	Keypress: equal
+646.6610 	DATA 	Keypress: equal
+646.8798 	DATA 	Keypress: equal
+647.1014 	DATA 	Keypress: equal
+647.3296 	DATA 	Keypress: equal
+647.5798 	DATA 	Keypress: equal
+647.8171 	DATA 	Keypress: equal
+647.8278 	DATA 	Main trial 43 run 2: rule=ABA, A=triangle, B=circle, A'=rectangle, B'=star
+648.0811 	DATA 	Keypress: equal
+648.3509 	DATA 	Keypress: equal
+648.6039 	DATA 	Keypress: equal
+658.6304 	DATA 	No keypress (maxWait exceeded)
+658.6304 	WARNING 	Main trial 43 timeout
+663.0305 	DATA 	Main trial 44 run 2: rule=ABA, A=circle, B=star, A'=rectangle, B'=circle
+673.4996 	DATA 	No keypress (maxWait exceeded)
+673.4996 	WARNING 	Main trial 44 timeout
+675.6802 	DATA 	Main trial 45 run 2: rule=ABA, A=rectangle, B=triangle, A'=triangle, B'=circle
+684.7165 	DATA 	No keypress (maxWait exceeded)
+684.7165 	WARNING 	Main trial 45 timeout
+688.3564 	DATA 	Main trial 46 run 2: rule=ABB, A=rectangle, B=circle, A'=rectangle, B'=star
+698.5541 	DATA 	No keypress (maxWait exceeded)
+698.5541 	WARNING 	Main trial 46 timeout
+700.2662 	DATA 	Main trial 47 run 2: rule=ABA, A=star, B=rectangle, A'=triangle, B'=circle
+710.3574 	DATA 	No keypress (maxWait exceeded)
+710.3575 	WARNING 	Main trial 47 timeout
+713.7847 	DATA 	Main trial 48 run 2: rule=ABB, A=rectangle, B=star, A'=rectangle, B'=circle
+723.4712 	DATA 	No keypress (maxWait exceeded)
+723.4712 	WARNING 	Main trial 48 timeout
+729.5578 	DATA 	Main trial 49 run 2: rule=ABA, A=star, B=circle, A'=triangle, B'=rectangle
+739.3360 	DATA 	No keypress (maxWait exceeded)
+739.3360 	WARNING 	Main trial 49 timeout
+741.3665 	DATA 	Main trial 50 run 2: rule=ABB, A=rectangle, B=triangle, A'=circle, B'=triangle
+751.4447 	DATA 	No keypress (maxWait exceeded)
+751.4447 	WARNING 	Main trial 50 timeout
+752.3295 	DATA 	Main trial 51 run 2: rule=ABA, A=circle, B=triangle, A'=rectangle, B'=triangle
+762.3938 	DATA 	No keypress (maxWait exceeded)
+762.3938 	WARNING 	Main trial 51 timeout
+764.1001 	DATA 	Main trial 52 run 2: rule=ABB, A=rectangle, B=star, A'=star, B'=triangle
+773.8550 	DATA 	No keypress (maxWait exceeded)
+773.8550 	WARNING 	Main trial 52 timeout
+778.1780 	DATA 	Main trial 53 run 2: rule=ABA, A=rectangle, B=star, A'=circle, B'=rectangle
+788.2735 	DATA 	No keypress (maxWait exceeded)
+788.2735 	WARNING 	Main trial 53 timeout
+792.8137 	DATA 	Main trial 54 run 2: rule=ABA, A=star, B=rectangle, A'=rectangle, B'=circle
+802.1383 	DATA 	No keypress (maxWait exceeded)
+802.1384 	WARNING 	Main trial 54 timeout
+803.3879 	DATA 	Main trial 55 run 2: rule=ABA, A=triangle, B=circle, A'=star, B'=rectangle
+813.4545 	DATA 	No keypress (maxWait exceeded)
+813.4545 	WARNING 	Main trial 55 timeout
+816.4618 	DATA 	Main trial 56 run 2: rule=ABB, A=rectangle, B=circle, A'=triangle, B'=circle
+826.4193 	DATA 	No keypress (maxWait exceeded)
+826.4193 	WARNING 	Main trial 56 timeout
+829.5898 	DATA 	Main trial 57 run 2: rule=ABB, A=triangle, B=circle, A'=star, B'=triangle
+839.9048 	DATA 	No keypress (maxWait exceeded)
+839.9048 	WARNING 	Main trial 57 timeout
+844.0334 	DATA 	Main trial 58 run 2: rule=ABB, A=triangle, B=rectangle, A'=rectangle, B'=triangle
+853.6536 	DATA 	No keypress (maxWait exceeded)
+853.6536 	WARNING 	Main trial 58 timeout
+856.9883 	DATA 	Main trial 59 run 2: rule=ABA, A=rectangle, B=star, A'=rectangle, B'=star
+866.1664 	DATA 	No keypress (maxWait exceeded)
+866.1664 	WARNING 	Main trial 59 timeout
+869.5898 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+875.2506 	DATA 	Keypress: equal
+875.2508 	DATA 	Main trial 60 run 3: rule=ABB, A=circle, B=triangle, A'=circle, B'=triangle
+884.9110 	DATA 	No keypress (maxWait exceeded)
+884.9111 	WARNING 	Main trial 60 timeout
+887.4496 	DATA 	Main trial 61 run 3: rule=ABB, A=triangle, B=rectangle, A'=triangle, B'=circle
+897.6026 	DATA 	No keypress (maxWait exceeded)
+897.6026 	WARNING 	Main trial 61 timeout
+901.3032 	DATA 	Main trial 62 run 3: rule=ABB, A=star, B=circle, A'=rectangle, B'=circle
+911.6799 	DATA 	No keypress (maxWait exceeded)
+911.6800 	WARNING 	Main trial 62 timeout
+913.8842 	DATA 	Main trial 63 run 3: rule=ABA, A=triangle, B=star, A'=star, B'=triangle
+923.5797 	DATA 	No keypress (maxWait exceeded)
+923.5797 	WARNING 	Main trial 63 timeout
+926.9500 	DATA 	Main trial 64 run 3: rule=ABA, A=rectangle, B=star, A'=circle, B'=rectangle
+936.6784 	DATA 	No keypress (maxWait exceeded)
+936.6784 	WARNING 	Main trial 64 timeout
+940.5334 	DATA 	Main trial 65 run 3: rule=ABB, A=star, B=circle, A'=triangle, B'=star
+951.3379 	DATA 	No keypress (maxWait exceeded)
+951.3379 	WARNING 	Main trial 65 timeout
+953.5874 	DATA 	Main trial 66 run 3: rule=ABB, A=circle, B=rectangle, A'=rectangle, B'=triangle
+964.2040 	DATA 	No keypress (maxWait exceeded)
+964.2040 	WARNING 	Main trial 66 timeout
+966.2375 	DATA 	Main trial 67 run 3: rule=ABB, A=triangle, B=circle, A'=star, B'=triangle
+976.3248 	DATA 	No keypress (maxWait exceeded)
+976.3248 	WARNING 	Main trial 67 timeout
+980.3156 	DATA 	Main trial 68 run 3: rule=ABA, A=rectangle, B=circle, A'=circle, B'=star
+990.1892 	DATA 	No keypress (maxWait exceeded)
+990.1892 	WARNING 	Main trial 68 timeout
+994.1266 	DATA 	Main trial 69 run 3: rule=ABB, A=star, B=rectangle, A'=star, B'=rectangle
+1004.7726 	DATA 	No keypress (maxWait exceeded)
+1004.7726 	WARNING 	Main trial 69 timeout
+1009.1251 	DATA 	Main trial 70 run 3: rule=ABB, A=circle, B=star, A'=triangle, B'=rectangle
+1018.5845 	DATA 	No keypress (maxWait exceeded)
+1018.5845 	WARNING 	Main trial 70 timeout
+1021.1784 	DATA 	Main trial 71 run 3: rule=ABB, A=circle, B=triangle, A'=rectangle, B'=star
+1030.8396 	DATA 	No keypress (maxWait exceeded)
+1030.8397 	WARNING 	Main trial 71 timeout
+1033.9872 	DATA 	Main trial 72 run 3: rule=ABA, A=circle, B=triangle, A'=triangle, B'=circle
+1043.6014 	DATA 	No keypress (maxWait exceeded)
+1043.6014 	WARNING 	Main trial 72 timeout
+1045.3631 	DATA 	Main trial 73 run 3: rule=ABB, A=triangle, B=star, A'=triangle, B'=rectangle
+1055.4045 	DATA 	No keypress (maxWait exceeded)
+1055.4045 	WARNING 	Main trial 73 timeout
+1057.9353 	DATA 	Main trial 74 run 3: rule=ABB, A=triangle, B=circle, A'=rectangle, B'=circle
+1067.9548 	DATA 	No keypress (maxWait exceeded)
+1067.9548 	WARNING 	Main trial 74 timeout
+1071.9773 	DATA 	Main trial 75 run 3: rule=ABB, A=star, B=triangle, A'=circle, B'=rectangle
+1082.1724 	DATA 	No keypress (maxWait exceeded)
+1082.1724 	WARNING 	Main trial 75 timeout
+1086.8656 	DATA 	Main trial 76 run 3: rule=ABA, A=rectangle, B=circle, A'=rectangle, B'=star
+1097.5864 	DATA 	No keypress (maxWait exceeded)
+1097.5865 	WARNING 	Main trial 76 timeout
+1099.7863 	DATA 	Main trial 77 run 3: rule=ABA, A=triangle, B=circle, A'=star, B'=circle
+1109.6859 	DATA 	No keypress (maxWait exceeded)
+1109.6859 	WARNING 	Main trial 77 timeout
+1112.0566 	DATA 	Main trial 78 run 3: rule=ABA, A=circle, B=star, A'=star, B'=circle
+1121.5714 	DATA 	No keypress (maxWait exceeded)
+1121.5714 	WARNING 	Main trial 78 timeout
+1125.1454 	DATA 	Main trial 79 run 3: rule=ABB, A=star, B=triangle, A'=star, B'=circle
+1135.5717 	DATA 	No keypress (maxWait exceeded)
+1135.5717 	WARNING 	Main trial 79 timeout
+1137.7027 	DATA 	Main trial 80 run 3: rule=ABA, A=rectangle, B=triangle, A'=triangle, B'=star
+1147.8705 	DATA 	No keypress (maxWait exceeded)
+1147.8706 	WARNING 	Main trial 80 timeout
+1151.3422 	DATA 	Main trial 81 run 3: rule=ABB, A=circle, B=rectangle, A'=triangle, B'=rectangle
+1161.3223 	DATA 	No keypress (maxWait exceeded)
+1161.3223 	WARNING 	Main trial 81 timeout
+1164.6679 	DATA 	Main trial 82 run 3: rule=ABA, A=star, B=triangle, A'=star, B'=triangle
+1174.1841 	DATA 	No keypress (maxWait exceeded)
+1174.1841 	WARNING 	Main trial 82 timeout
+1176.4339 	DATA 	Main trial 83 run 3: rule=ABB, A=circle, B=rectangle, A'=rectangle, B'=star
+1187.3297 	DATA 	No keypress (maxWait exceeded)
+1187.3297 	WARNING 	Main trial 83 timeout
+1190.2383 	DATA 	Main trial 84 run 3: rule=ABB, A=star, B=rectangle, A'=circle, B'=rectangle
+1200.1287 	DATA 	No keypress (maxWait exceeded)
+1200.1287 	WARNING 	Main trial 84 timeout
+1203.7169 	DATA 	Main trial 85 run 3: rule=ABB, A=star, B=circle, A'=rectangle, B'=triangle
+1213.8214 	DATA 	No keypress (maxWait exceeded)
+1213.8214 	WARNING 	Main trial 85 timeout
+1217.0427 	DATA 	Main trial 86 run 3: rule=ABA, A=triangle, B=star, A'=circle, B'=triangle
+1227.0413 	DATA 	No keypress (maxWait exceeded)
+1227.0413 	WARNING 	Main trial 86 timeout
+1229.5367 	DATA 	Main trial 87 run 3: rule=ABA, A=star, B=circle, A'=circle, B'=star
+1239.6204 	DATA 	No keypress (maxWait exceeded)
+1239.6204 	WARNING 	Main trial 87 timeout
+1243.2118 	DATA 	Main trial 88 run 3: rule=ABA, A=star, B=circle, A'=star, B'=circle
+1253.0573 	DATA 	No keypress (maxWait exceeded)
+1253.0573 	WARNING 	Main trial 88 timeout
+1258.7320 	DATA 	Main trial 89 run 3: rule=ABB, A=triangle, B=rectangle, A'=triangle, B'=star
+1269.1525 	DATA 	No keypress (maxWait exceeded)
+1269.1525 	WARNING 	Main trial 89 timeout
+1272.4072 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+1280.1366 	DATA 	Keypress: equal
+1280.1368 	DATA 	Main trial 90 run 4: rule=ABA, A=star, B=circle, A'=circle, B'=star
+1289.9276 	DATA 	No keypress (maxWait exceeded)
+1289.9277 	WARNING 	Main trial 90 timeout
+1291.6786 	DATA 	Main trial 91 run 4: rule=ABA, A=triangle, B=rectangle, A'=circle, B'=rectangle
+1301.5880 	DATA 	No keypress (maxWait exceeded)
+1301.5881 	WARNING 	Main trial 91 timeout
+1304.4575 	DATA 	Main trial 92 run 4: rule=ABA, A=circle, B=star, A'=star, B'=triangle
+1313.7020 	DATA 	No keypress (maxWait exceeded)
+1313.7021 	WARNING 	Main trial 92 timeout
+1314.9369 	DATA 	Main trial 93 run 4: rule=ABB, A=star, B=rectangle, A'=rectangle, B'=circle
+1325.1513 	DATA 	No keypress (maxWait exceeded)
+1325.1513 	WARNING 	Main trial 93 timeout
+1328.1697 	DATA 	Main trial 94 run 4: rule=ABB, A=circle, B=triangle, A'=rectangle, B'=star
+1338.2283 	DATA 	No keypress (maxWait exceeded)
+1338.2284 	WARNING 	Main trial 94 timeout
+1342.0795 	DATA 	Main trial 95 run 4: rule=ABA, A=star, B=circle, A'=star, B'=rectangle
+1352.1820 	DATA 	No keypress (maxWait exceeded)
+1352.1821 	WARNING 	Main trial 95 timeout
+1355.3016 	DATA 	Main trial 96 run 4: rule=ABB, A=triangle, B=star, A'=star, B'=rectangle
+1365.9556 	DATA 	No keypress (maxWait exceeded)
+1365.9556 	WARNING 	Main trial 96 timeout
+1369.4150 	DATA 	Main trial 97 run 4: rule=ABB, A=circle, B=star, A'=triangle, B'=circle
+1380.1993 	DATA 	No keypress (maxWait exceeded)
+1380.1993 	WARNING 	Main trial 97 timeout
+1381.5664 	DATA 	Main trial 98 run 4: rule=ABA, A=rectangle, B=triangle, A'=star, B'=rectangle
+1391.9036 	DATA 	No keypress (maxWait exceeded)
+1391.9036 	WARNING 	Main trial 98 timeout
+1394.0019 	DATA 	Main trial 99 run 4: rule=ABB, A=triangle, B=star, A'=rectangle, B'=circle
+1403.9499 	DATA 	No keypress (maxWait exceeded)
+1403.9500 	WARNING 	Main trial 99 timeout
+1406.9402 	DATA 	Main trial 100 run 4: rule=ABA, A=star, B=triangle, A'=triangle, B'=rectangle
+1417.5944 	DATA 	No keypress (maxWait exceeded)
+1417.5945 	WARNING 	Main trial 100 timeout
+1420.8732 	DATA 	Main trial 101 run 4: rule=ABA, A=circle, B=star, A'=star, B'=circle
+1430.5691 	DATA 	No keypress (maxWait exceeded)
+1430.5691 	WARNING 	Main trial 101 timeout
+1434.1274 	DATA 	Main trial 102 run 4: rule=ABB, A=circle, B=rectangle, A'=rectangle, B'=circle
+1444.7827 	DATA 	No keypress (maxWait exceeded)
+1444.7827 	WARNING 	Main trial 102 timeout
+1447.3290 	DATA 	Main trial 103 run 4: rule=ABB, A=triangle, B=circle, A'=circle, B'=rectangle
+1456.8668 	DATA 	No keypress (maxWait exceeded)
+1456.8668 	WARNING 	Main trial 103 timeout
+1459.8213 	DATA 	Main trial 104 run 4: rule=ABA, A=rectangle, B=star, A'=rectangle, B'=circle
+1470.1875 	DATA 	No keypress (maxWait exceeded)
+1470.1875 	WARNING 	Main trial 104 timeout
+1474.0152 	DATA 	Main trial 105 run 4: rule=ABA, A=rectangle, B=star, A'=circle, B'=rectangle
+1483.1805 	DATA 	No keypress (maxWait exceeded)
+1483.1805 	WARNING 	Main trial 105 timeout
+1486.7739 	DATA 	Main trial 106 run 4: rule=ABB, A=rectangle, B=triangle, A'=triangle, B'=star
+1497.0642 	DATA 	No keypress (maxWait exceeded)
+1497.0642 	WARNING 	Main trial 106 timeout
+1500.0980 	DATA 	Main trial 107 run 4: rule=ABB, A=triangle, B=circle, A'=star, B'=rectangle
+1510.2869 	DATA 	No keypress (maxWait exceeded)
+1510.2869 	WARNING 	Main trial 107 timeout
+1514.1813 	DATA 	Main trial 108 run 4: rule=ABB, A=triangle, B=rectangle, A'=rectangle, B'=triangle
+1520.7620 	DATA 	Keypress: 1
+1520.8493 	DATA 	Keypress: 1
+1520.9741 	DATA 	Keypress: 1
+1521.0814 	DATA 	Keypress: 1
+1521.1663 	DATA 	Keypress: 1
+1521.2812 	DATA 	Keypress: 1
+1521.3777 	DATA 	Keypress: 1
+1521.4941 	DATA 	Keypress: 1
+1521.4946 	DATA 	Main trial 108 response: key=1, rt=0.0506, correct=0
+1521.6255 	DATA 	Keypress: 1
+1521.7315 	DATA 	Keypress: 1
+1521.8377 	DATA 	Keypress: 1
+1521.9562 	DATA 	Keypress: 1
+1522.0868 	DATA 	Keypress: 1
+1522.1929 	DATA 	Keypress: 1
+1522.3136 	DATA 	Keypress: 1
+1522.4086 	DATA 	Keypress: 1
+1522.5259 	DATA 	Keypress: 1
+1522.6217 	DATA 	Keypress: 1
+1522.7388 	DATA 	Keypress: 1
+1522.8455 	DATA 	Keypress: 1
+1522.9742 	DATA 	Keypress: 1
+1523.0942 	DATA 	Keypress: 1
+1523.1996 	DATA 	Keypress: 1
+1523.3256 	DATA 	Keypress: 1
+1523.4424 	DATA 	Keypress: 1
+1523.5490 	DATA 	Keypress: 1
+1523.6967 	DATA 	Keypress: 1
+1523.7826 	DATA 	Keypress: 1
+1523.9123 	DATA 	Keypress: 1
+1523.9883 	DATA 	Keypress: 1
+1524.1187 	DATA 	Keypress: 1
+1524.1921 	DATA 	Main trial 109 run 4: rule=ABA, A=rectangle, B=circle, A'=triangle, B'=circle
+1524.2305 	DATA 	Keypress: 1
+1524.3579 	DATA 	Keypress: 1
+1524.4638 	DATA 	Keypress: 1
+1524.6959 	DATA 	Keypress: 1
+1524.8429 	DATA 	Keypress: 1
+1524.9405 	DATA 	Keypress: 1
+1525.0776 	DATA 	Keypress: 1
+1525.2085 	DATA 	Keypress: 1
+1525.4357 	DATA 	Keypress: 1
+1525.6248 	DATA 	Keypress: 1
+1525.7611 	DATA 	Keypress: 1
+1525.8694 	DATA 	Keypress: 1
+1525.9859 	DATA 	Keypress: 1
+1526.0994 	DATA 	Keypress: 1
+1526.2044 	DATA 	Keypress: 1
+1526.3409 	DATA 	Keypress: 1
+1526.4491 	DATA 	Keypress: 1
+1526.5866 	DATA 	Keypress: 1
+1526.7115 	DATA 	Keypress: 1
+1526.8094 	DATA 	Keypress: 1
+1527.0351 	DATA 	Keypress: 1
+1527.1567 	DATA 	Keypress: 1
+1527.2737 	DATA 	Keypress: 1
+1527.4015 	DATA 	Keypress: 1
+1527.4968 	DATA 	Keypress: 1
+1527.6251 	DATA 	Keypress: 1
+1527.7217 	DATA 	Keypress: 1
+1527.9544 	DATA 	Keypress: 1
+1528.0695 	DATA 	Keypress: 1
+1528.2117 	DATA 	Keypress: 1
+1528.3176 	DATA 	Keypress: 1
+1535.5473 	DATA 	No keypress (maxWait exceeded)
+1535.5473 	WARNING 	Main trial 109 timeout
+1538.3211 	DATA 	Main trial 110 run 4: rule=ABB, A=rectangle, B=triangle, A'=triangle, B'=star
+1549.0879 	DATA 	No keypress (maxWait exceeded)
+1549.0880 	WARNING 	Main trial 110 timeout
+1551.7059 	DATA 	Keypress: g
+1551.8236 	DATA 	Keypress: g
+1551.9494 	DATA 	Keypress: g
+1552.0575 	DATA 	Keypress: g
+1552.1734 	DATA 	Keypress: g
+1552.2100 	DATA 	Main trial 111 run 4: rule=ABA, A=rectangle, B=triangle, A'=circle, B'=triangle
+1552.2915 	DATA 	Keypress: g
+1552.4181 	DATA 	Keypress: g
+1552.5400 	DATA 	Keypress: g
+1552.6590 	DATA 	Keypress: g
+1552.7832 	DATA 	Keypress: g
+1552.9141 	DATA 	Keypress: g
+1553.0189 	DATA 	Keypress: g
+1553.1460 	DATA 	Keypress: g
+1553.2679 	DATA 	Keypress: g
+1553.3955 	DATA 	Keypress: g
+1553.5228 	DATA 	Keypress: g
+1553.6473 	DATA 	Keypress: g
+1553.7833 	DATA 	Keypress: g
+1553.9095 	DATA 	Keypress: g
+1554.0344 	DATA 	Keypress: g
+1554.1645 	DATA 	Keypress: g
+1554.2991 	DATA 	Keypress: g
+1554.4201 	DATA 	Keypress: g
+1554.5573 	DATA 	Keypress: g
+1554.6721 	DATA 	Keypress: g
+1554.8129 	DATA 	Keypress: g
+1554.9324 	DATA 	Keypress: g
+1555.0715 	DATA 	Keypress: g
+1555.1986 	DATA 	Keypress: g
+1555.3330 	DATA 	Keypress: g
+1555.4579 	DATA 	Keypress: g
+1555.5748 	DATA 	Keypress: g
+1561.9032 	DATA 	No keypress (maxWait exceeded)
+1561.9033 	WARNING 	Main trial 111 timeout
+1565.1730 	DATA 	Main trial 112 run 4: rule=ABB, A=triangle, B=star, A'=triangle, B'=rectangle
+1574.4864 	DATA 	No keypress (maxWait exceeded)
+1574.4864 	WARNING 	Main trial 112 timeout
+1577.7689 	DATA 	Main trial 113 run 4: rule=ABA, A=star, B=triangle, A'=triangle, B'=star
+1588.0422 	DATA 	No keypress (maxWait exceeded)
+1588.0422 	WARNING 	Main trial 113 timeout
+1590.0236 	DATA 	Main trial 114 run 4: rule=ABB, A=circle, B=star, A'=triangle, B'=rectangle
+1599.8043 	DATA 	No keypress (maxWait exceeded)
+1599.8043 	WARNING 	Main trial 114 timeout
+1601.8343 	DATA 	Main trial 115 run 4: rule=ABB, A=circle, B=rectangle, A'=circle, B'=rectangle
+1612.0665 	DATA 	No keypress (maxWait exceeded)
+1612.0666 	WARNING 	Main trial 115 timeout
+1614.9811 	DATA 	Main trial 116 run 4: rule=ABA, A=triangle, B=star, A'=triangle, B'=rectangle
+1624.4227 	DATA 	No keypress (maxWait exceeded)
+1624.4227 	WARNING 	Main trial 116 timeout
+1626.7026 	DATA 	Main trial 117 run 4: rule=ABB, A=rectangle, B=triangle, A'=triangle, B'=circle
+1636.5188 	DATA 	No keypress (maxWait exceeded)
+1636.5188 	WARNING 	Main trial 117 timeout
+1639.3128 	DATA 	Main trial 118 run 4: rule=ABB, A=star, B=triangle, A'=star, B'=rectangle
+1649.0426 	DATA 	No keypress (maxWait exceeded)
+1649.0426 	WARNING 	Main trial 118 timeout
+1652.8668 	DATA 	Main trial 119 run 4: rule=ABA, A=circle, B=rectangle, A'=triangle, B'=rectangle
+1653.0265 	DATA 	Mouse: Left button down, pos=(1278,547)
+1653.0273 	DATA 	Mouse:  Left button up, pos=(1278,547)
+1662.3626 	DATA 	No keypress (maxWait exceeded)
+1662.3626 	WARNING 	Main trial 119 timeout
+1664.4299 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+1676.2361 	DATA 	Keypress: space
+1676.2363 	INFO 	Session finished normally.
