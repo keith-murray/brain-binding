@@ -56,7 +56,7 @@ FIELDNAMES = [
     'rule_type', 'A_stim', 'B_stim', 'A_prime', 'B_prime', 'rule_sequence', 'test_sequence',
     'correct_next_stim', 'slot_mapping', 'correct_stim',
     'response_key', 'response_slot', 'response_stim', 'correct', 'rt',
-    'isi1', 'isi2', 'isi3', 'isi4', 'iti',
+    'isi1', 'isi2', 'isi3', 'isi4', 'isi5', 'iti',
     't_fixation', 't_sample', 't_delay',
     't_rule1', 't_rule2', 't_rule3', 't_test1', 't_test2', 't_response',
 ]
@@ -67,7 +67,7 @@ FIELDNAMES = [
 def make_window() -> visual.Window:
     return visual.Window(
         size=WIN_SIZE,
-        fullscr=False,
+        fullscr=True,
         color='white',
         units=WIN_UNITS,
         name='Window',
