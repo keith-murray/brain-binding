@@ -333,8 +333,9 @@ def run_main_task(win, stimuli, fixation, key_labels, writer, csv_file,
             show_text_screen(
                 win,
                 f'Break — run {run_idx} of {N_RUNS} complete.\n\n'
-                'Rest for a moment, then press SPACE to continue.'
+                'Rest for a moment, then press any button to continue.'
             )
+            wait_for_scanner(win)
 
         run_trials = trials[run_idx * TRIALS_PER_RUN:(run_idx + 1) * TRIALS_PER_RUN]
 
@@ -501,7 +502,7 @@ def main(sid: str) -> None:
                       main_clock, rt_clock, sid, seed + 1)
 
         # End screen
-        show_text_screen(win, 'The experiment is complete. Thank you!\n\nPress SPACE to exit.')
+        show_text_screen(win, 'The experiment is complete. Thank you!\n\nPress any button to exit.')
 
         logging.info('Session finished normally.')
 
