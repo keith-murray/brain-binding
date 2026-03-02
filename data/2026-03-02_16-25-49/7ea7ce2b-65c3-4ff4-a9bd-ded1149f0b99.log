@@ -1,0 +1,1259 @@
+0.0011 	INFO 	Starting session sid=7ea7ce2b-65c3-4ff4-a9bd-ded1149f0b99, seed=812739782
+0.0014 	WARNING 	Monitor specification not found. Creating a temporary one...
+0.1952 	INFO 	Using renderer 'Intel(R) Arc(TM) 140V GPU (16GB)' for graphics
+0.1952 	INFO 	OpenGL version supported by driver is 4..
+2.6670 	EXP 	Created Window = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000164106D6C80>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000164106D6C20>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1, 1, 1]), colorSpace='rgb', depthBits=8, fullscr=False, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000164106D6F20>, multiSample=False, name='Window', numSamples=2, pos=(-10, -50), screen=0, size=array([1300,  900]), stencilBits=0, stereo=False, title='PsychoPy', units='norm', useFBO=False, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+2.6671 	EXP 	Window: backgroundImage = None
+2.6671 	EXP 	Window: backgroundFit = 'cover'
+2.7715 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image=str(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.28, 0.37]), texRes=128, units='norm', win=Window(...))
+2.8273 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image=str(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.28, 0.37]), texRes=128, units='norm', win=Window(...))
+2.8956 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image=str(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.28, 0.37]), texRes=128, units='norm', win=Window(...))
+2.9510 	EXP 	Created unnamed ImageStim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=np.False_, flipVert=np.False_, image=str(...), interpolate=False, mask=None, maskParams=None, name='unnamed ImageStim', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.28, 0.37]), texRes=128, units='norm', win=Window(...))
+3.1678 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='norm', win=Window(...), wrapWidth=1)
+3.1724 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.65, -0.28]), rgb=UNKNOWN, text='1', units='norm', win=Window(...), wrapWidth=1)
+3.1771 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-0.22, -0.28]), rgb=UNKNOWN, text='2', units='norm', win=Window(...), wrapWidth=1)
+3.1812 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.22, -0.28]), rgb=UNKNOWN, text='3', units='norm', win=Window(...), wrapWidth=1)
+3.1851 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0.65, -0.28]), rgb=UNKNOWN, text='4', units='norm', win=Window(...), wrapWidth=1)
+3.2454 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+10.1048 	DATA 	Keypress: 3
+10.1104 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Waiting for scanner...', units='norm', win=Window(...), wrapWidth=1)
+120.5253 	DATA 	Keypress: equal
+120.5256 	DATA 	WM trial 0: sample=triangle, isi=1.0
+122.5265 	DATA 	Keypress: equal
+123.1333 	DATA 	Keypress: 4
+123.1335 	DATA 	WM trial 0 response: key=4, rt=0.5206, correct=1
+123.1337 	DATA 	WM trial 1: sample=star, isi=2.5
+124.5267 	DATA 	Keypress: equal
+126.5302 	DATA 	Keypress: equal
+127.2369 	DATA 	Keypress: 4
+127.2371 	DATA 	WM trial 1 response: key=4, rt=0.5234, correct=1
+127.2401 	DATA 	WM trial 2: sample=rectangle, isi=1.0
+128.5266 	DATA 	Keypress: equal
+129.9878 	DATA 	Keypress: 4
+129.9881 	DATA 	WM trial 2 response: key=4, rt=0.6756, correct=1
+129.9884 	DATA 	WM trial 3: sample=rectangle, isi=2.5
+130.5305 	DATA 	Keypress: equal
+132.5267 	DATA 	Keypress: equal
+134.3868 	DATA 	Keypress: 2
+134.3871 	DATA 	WM trial 3 response: key=2, rt=0.8410, correct=1
+134.3873 	DATA 	WM trial 4: sample=circle, isi=2.5
+134.5285 	DATA 	Keypress: equal
+136.5265 	DATA 	Keypress: equal
+138.5253 	DATA 	Keypress: equal
+138.5455 	DATA 	Keypress: 2
+138.5458 	DATA 	WM trial 4 response: key=2, rt=0.5997, correct=1
+138.5459 	DATA 	WM trial 5: sample=star, isi=2.5
+140.5267 	DATA 	Keypress: equal
+142.5258 	DATA 	Keypress: equal
+142.8794 	DATA 	Keypress: 3
+142.8795 	DATA 	WM trial 5 response: key=3, rt=0.7498, correct=1
+142.8797 	DATA 	WM trial 6: sample=circle, isi=1.0
+144.5262 	DATA 	Keypress: equal
+145.4754 	DATA 	Keypress: 4
+145.4756 	DATA 	WM trial 6 response: key=4, rt=0.5293, correct=1
+145.4758 	DATA 	WM trial 7: sample=circle, isi=1.0
+146.5313 	DATA 	Keypress: equal
+148.1757 	DATA 	Keypress: 2
+148.1759 	DATA 	WM trial 7 response: key=2, rt=0.6127, correct=1
+148.1761 	DATA 	WM trial 8: sample=rectangle, isi=2.5
+148.5275 	DATA 	Keypress: equal
+150.5263 	DATA 	Keypress: equal
+152.3053 	DATA 	Keypress: 4
+152.3056 	DATA 	WM trial 8 response: key=4, rt=0.5588, correct=1
+152.3057 	DATA 	WM trial 9: sample=circle, isi=1.0
+152.5264 	DATA 	Keypress: equal
+154.5260 	DATA 	Keypress: equal
+155.0652 	DATA 	Keypress: 3
+155.0654 	DATA 	WM trial 9 response: key=3, rt=0.7023, correct=1
+155.0656 	DATA 	WM trial 10: sample=rectangle, isi=1.0
+156.5269 	DATA 	Keypress: equal
+157.7904 	DATA 	Keypress: 1
+157.7910 	DATA 	WM trial 10 response: key=1, rt=0.6610, correct=1
+157.7911 	DATA 	WM trial 11: sample=triangle, isi=2.5
+158.5294 	DATA 	Keypress: equal
+160.5276 	DATA 	Keypress: equal
+161.9058 	DATA 	Keypress: 4
+161.9060 	DATA 	WM trial 11 response: key=4, rt=0.5430, correct=1
+161.9063 	DATA 	WM trial 12: sample=rectangle, isi=2.5
+162.5285 	DATA 	Keypress: equal
+164.5273 	DATA 	Keypress: equal
+166.1209 	DATA 	Keypress: 3
+166.1212 	DATA 	WM trial 12 response: key=3, rt=0.6248, correct=1
+166.1214 	DATA 	WM trial 13: sample=circle, isi=2.5
+166.5307 	DATA 	Keypress: equal
+168.5280 	DATA 	Keypress: equal
+170.3789 	DATA 	Keypress: 2
+170.3793 	DATA 	WM trial 13 response: key=2, rt=0.6825, correct=1
+170.3795 	DATA 	WM trial 14: sample=star, isi=1.0
+170.5282 	DATA 	Keypress: equal
+172.5261 	DATA 	Keypress: equal
+173.0003 	DATA 	Keypress: 4
+173.0004 	DATA 	WM trial 14 response: key=4, rt=0.5538, correct=1
+173.0008 	DATA 	WM trial 15: sample=star, isi=2.5
+174.5272 	DATA 	Keypress: equal
+176.5269 	DATA 	Keypress: equal
+177.0603 	DATA 	Keypress: 4
+177.0605 	DATA 	WM trial 15 response: key=4, rt=0.4803, correct=1
+177.0607 	DATA 	WM trial 16: sample=triangle, isi=1.0
+178.5274 	DATA 	Keypress: equal
+179.6822 	DATA 	Keypress: 4
+179.6824 	DATA 	WM trial 16 response: key=4, rt=0.5359, correct=1
+179.6825 	DATA 	WM trial 17: sample=triangle, isi=1.0
+180.5281 	DATA 	Keypress: equal
+182.4432 	DATA 	Keypress: 1
+182.4435 	DATA 	WM trial 17 response: key=1, rt=0.6799, correct=1
+182.4437 	DATA 	WM trial 18: sample=triangle, isi=2.5
+182.5293 	DATA 	Keypress: equal
+184.5272 	DATA 	Keypress: equal
+186.5258 	DATA 	Keypress: equal
+186.6537 	DATA 	Keypress: 2
+186.6539 	DATA 	WM trial 18 response: key=2, rt=0.6407, correct=1
+186.6540 	DATA 	WM trial 19: sample=circle, isi=2.5
+188.5288 	DATA 	Keypress: equal
+190.5258 	DATA 	Keypress: equal
+190.7738 	DATA 	Keypress: 3
+190.7744 	DATA 	WM trial 19 response: key=3, rt=0.5605, correct=1
+190.7748 	DATA 	WM trial 20: sample=rectangle, isi=1.0
+192.5285 	DATA 	Keypress: equal
+193.4338 	DATA 	Keypress: 1
+193.4354 	DATA 	WM trial 20 response: key=1, rt=0.5676, correct=1
+193.4356 	DATA 	WM trial 21: sample=star, isi=1.0
+194.5310 	DATA 	Keypress: equal
+196.0793 	DATA 	Keypress: 2
+196.0795 	DATA 	WM trial 21 response: key=2, rt=0.5628, correct=1
+196.0796 	DATA 	WM trial 22: sample=star, isi=1.0
+196.5270 	DATA 	Keypress: equal
+198.5260 	DATA 	Keypress: equal
+198.6428 	DATA 	Keypress: 4
+198.6431 	DATA 	WM trial 22 response: key=4, rt=0.4971, correct=1
+198.6432 	DATA 	WM trial 23: sample=triangle, isi=2.5
+200.5274 	DATA 	Keypress: equal
+202.5252 	DATA 	Keypress: equal
+202.7382 	DATA 	Keypress: 3
+202.7385 	DATA 	WM trial 23 response: key=3, rt=0.5249, correct=1
+202.7524 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+204.5258 	DATA 	Keypress: equal
+206.5259 	DATA 	Keypress: equal
+208.1964 	DATA 	Keypress: 4
+208.2008 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Waiting for scanner...', units='norm', win=Window(...), wrapWidth=1)
+208.5252 	DATA 	Keypress: equal
+208.5262 	DATA 	Main trial 0 run 1: rule=ABA, A=rectangle, B=star, A'=star, B'=triangle
+210.5302 	DATA 	Keypress: equal
+212.5271 	DATA 	Keypress: equal
+214.5285 	DATA 	Keypress: equal
+216.5298 	DATA 	Keypress: equal
+217.2239 	DATA 	Keypress: 3
+217.2246 	DATA 	Main trial 0 response: key=3, rt=0.5940, correct=1
+218.5276 	DATA 	Keypress: equal
+220.5276 	DATA 	Keypress: equal
+221.3932 	DATA 	Main trial 1 run 1: rule=ABB, A=circle, B=rectangle, A'=circle, B'=triangle
+222.5313 	DATA 	Keypress: equal
+224.5270 	DATA 	Keypress: equal
+226.5267 	DATA 	Keypress: equal
+228.5289 	DATA 	Keypress: equal
+229.7162 	DATA 	Keypress: 4
+229.7164 	DATA 	Main trial 1 response: key=4, rt=0.4193, correct=1
+230.5294 	DATA 	Keypress: equal
+232.5273 	DATA 	Keypress: equal
+234.3493 	DATA 	Main trial 2 run 1: rule=ABB, A=triangle, B=rectangle, A'=star, B'=circle
+234.5289 	DATA 	Keypress: equal
+236.5291 	DATA 	Keypress: equal
+238.5292 	DATA 	Keypress: equal
+240.5273 	DATA 	Keypress: equal
+242.5276 	DATA 	Keypress: equal
+243.3592 	DATA 	Keypress: 3
+243.3594 	DATA 	Main trial 2 response: key=3, rt=0.5786, correct=1
+244.5305 	DATA 	Keypress: equal
+246.5274 	DATA 	Keypress: equal
+247.3246 	DATA 	Main trial 3 run 1: rule=ABA, A=star, B=rectangle, A'=star, B'=rectangle
+248.5267 	DATA 	Keypress: equal
+250.5297 	DATA 	Keypress: equal
+252.5303 	DATA 	Keypress: equal
+254.5302 	DATA 	Keypress: equal
+255.4753 	DATA 	Keypress: 3
+255.4756 	DATA 	Main trial 3 response: key=3, rt=0.6787, correct=1
+256.5272 	DATA 	Keypress: equal
+257.6110 	DATA 	Main trial 4 run 1: rule=ABB, A=rectangle, B=circle, A'=star, B'=circle
+258.5300 	DATA 	Keypress: equal
+260.5287 	DATA 	Keypress: equal
+262.5299 	DATA 	Keypress: equal
+264.5309 	DATA 	Keypress: equal
+266.2642 	DATA 	Keypress: 3
+266.2645 	DATA 	Main trial 4 response: key=3, rt=0.5336, correct=1
+266.5295 	DATA 	Keypress: equal
+268.2565 	DATA 	Main trial 5 run 1: rule=ABA, A=triangle, B=rectangle, A'=circle, B'=star
+268.5270 	DATA 	Keypress: equal
+270.5274 	DATA 	Keypress: equal
+272.5297 	DATA 	Keypress: equal
+274.5267 	DATA 	Keypress: equal
+276.0198 	DATA 	Keypress: 2
+276.0201 	DATA 	Main trial 5 response: key=2, rt=0.6395, correct=1
+276.5291 	DATA 	Keypress: equal
+278.5294 	DATA 	Keypress: equal
+278.9002 	DATA 	Main trial 6 run 1: rule=ABA, A=rectangle, B=star, A'=circle, B'=rectangle
+280.5274 	DATA 	Keypress: equal
+282.5283 	DATA 	Keypress: equal
+284.5269 	DATA 	Keypress: equal
+286.5273 	DATA 	Keypress: equal
+288.4090 	DATA 	Keypress: 1
+288.4094 	DATA 	Main trial 6 response: key=1, rt=0.5955, correct=1
+288.5303 	DATA 	Keypress: equal
+290.4246 	DATA 	Main trial 7 run 1: rule=ABA, A=star, B=rectangle, A'=star, B'=circle
+290.5274 	DATA 	Keypress: equal
+292.5319 	DATA 	Keypress: equal
+294.5273 	DATA 	Keypress: equal
+296.5303 	DATA 	Keypress: equal
+298.5275 	DATA 	Keypress: equal
+299.3949 	DATA 	Keypress: 2
+299.3952 	DATA 	Main trial 7 response: key=2, rt=0.6819, correct=1
+300.5309 	DATA 	Keypress: equal
+302.5276 	DATA 	Keypress: equal
+302.9378 	DATA 	Main trial 8 run 1: rule=ABB, A=star, B=triangle, A'=star, B'=triangle
+304.5291 	DATA 	Keypress: equal
+306.5276 	DATA 	Keypress: equal
+308.5320 	DATA 	Keypress: equal
+310.5293 	DATA 	Keypress: equal
+312.1848 	DATA 	Keypress: 3
+312.1850 	DATA 	Main trial 8 response: key=3, rt=0.5883, correct=1
+312.5307 	DATA 	Keypress: equal
+314.5273 	DATA 	Keypress: equal
+315.8468 	DATA 	Main trial 9 run 1: rule=ABB, A=circle, B=triangle, A'=star, B'=rectangle
+316.5295 	DATA 	Keypress: equal
+318.5285 	DATA 	Keypress: equal
+320.5293 	DATA 	Keypress: equal
+322.5290 	DATA 	Keypress: equal
+324.5273 	DATA 	Keypress: equal
+325.5759 	DATA 	Keypress: 3
+325.5763 	DATA 	Main trial 9 response: key=3, rt=0.6123, correct=1
+326.5293 	DATA 	Keypress: equal
+328.3624 	DATA 	Main trial 10 run 1: rule=ABB, A=circle, B=triangle, A'=triangle, B'=circle
+328.5313 	DATA 	Keypress: equal
+330.5308 	DATA 	Keypress: equal
+332.5306 	DATA 	Keypress: equal
+334.5300 	DATA 	Keypress: equal
+336.5259 	DATA 	Keypress: equal
+336.9896 	DATA 	Keypress: 2
+336.9898 	DATA 	Main trial 10 response: key=2, rt=0.7762, correct=1
+338.3469 	DATA 	Main trial 11 run 1: rule=ABA, A=star, B=circle, A'=triangle, B'=rectangle
+338.5311 	DATA 	Keypress: equal
+340.5273 	DATA 	Keypress: equal
+342.5296 	DATA 	Keypress: equal
+344.5298 	DATA 	Keypress: equal
+346.5297 	DATA 	Keypress: equal
+347.8745 	DATA 	Keypress: 2
+347.8752 	DATA 	Main trial 11 response: key=2, rt=0.5773, correct=1
+348.5282 	DATA 	Keypress: equal
+350.0722 	DATA 	Main trial 12 run 1: rule=ABB, A=rectangle, B=triangle, A'=circle, B'=triangle
+350.5283 	DATA 	Keypress: equal
+352.5298 	DATA 	Keypress: equal
+354.5284 	DATA 	Keypress: equal
+356.5296 	DATA 	Keypress: equal
+358.5252 	DATA 	Keypress: equal
+358.8442 	DATA 	Keypress: 4
+358.8444 	DATA 	Main trial 12 response: key=4, rt=0.4806, correct=1
+360.5273 	DATA 	Keypress: equal
+362.5277 	DATA 	Keypress: equal
+364.5281 	DATA 	Keypress: equal
+364.8377 	DATA 	Main trial 13 run 1: rule=ABA, A=rectangle, B=star, A'=rectangle, B'=circle
+366.5290 	DATA 	Keypress: equal
+368.5286 	DATA 	Keypress: equal
+370.5289 	DATA 	Keypress: equal
+372.5276 	DATA 	Keypress: equal
+374.2522 	DATA 	Keypress: 2
+374.2524 	DATA 	Main trial 13 response: key=2, rt=0.6714, correct=1
+374.5276 	DATA 	Keypress: equal
+376.3411 	DATA 	Main trial 14 run 1: rule=ABB, A=star, B=triangle, A'=circle, B'=triangle
+376.5269 	DATA 	Keypress: equal
+378.5271 	DATA 	Keypress: equal
+380.5289 	DATA 	Keypress: equal
+382.5283 	DATA 	Keypress: equal
+384.5259 	DATA 	Keypress: equal
+385.0878 	DATA 	Keypress: 2
+385.0882 	DATA 	Main trial 14 response: key=2, rt=0.7251, correct=1
+386.5290 	DATA 	Keypress: equal
+387.5939 	DATA 	Main trial 15 run 1: rule=ABA, A=triangle, B=circle, A'=circle, B'=rectangle
+388.5284 	DATA 	Keypress: equal
+390.5282 	DATA 	Keypress: equal
+392.5271 	DATA 	Keypress: equal
+394.5317 	DATA 	Keypress: equal
+396.0727 	DATA 	Keypress: 1
+396.0729 	DATA 	Main trial 15 response: key=1, rt=0.5585, correct=1
+396.5270 	DATA 	Keypress: equal
+398.5290 	DATA 	Keypress: equal
+398.6486 	DATA 	Main trial 16 run 1: rule=ABB, A=triangle, B=rectangle, A'=circle, B'=rectangle
+400.5276 	DATA 	Keypress: equal
+402.5301 	DATA 	Keypress: equal
+404.5289 	DATA 	Keypress: equal
+406.5311 	DATA 	Keypress: equal
+407.0763 	DATA 	Keypress: 4
+407.0766 	DATA 	Main trial 16 response: key=4, rt=0.5461, correct=1
+408.5307 	DATA 	Keypress: equal
+410.5271 	DATA 	Keypress: equal
+412.4516 	DATA 	Main trial 17 run 1: rule=ABB, A=circle, B=triangle, A'=triangle, B'=circle
+412.5282 	DATA 	Keypress: equal
+414.5286 	DATA 	Keypress: equal
+416.5304 	DATA 	Keypress: equal
+418.5271 	DATA 	Keypress: equal
+420.5304 	DATA 	Keypress: equal
+421.4102 	DATA 	Keypress: 3
+421.4104 	DATA 	Main trial 17 response: key=3, rt=0.5299, correct=1
+422.5298 	DATA 	Keypress: equal
+424.5283 	DATA 	Keypress: equal
+424.6415 	DATA 	Main trial 18 run 1: rule=ABA, A=rectangle, B=circle, A'=rectangle, B'=triangle
+426.5274 	DATA 	Keypress: equal
+428.5283 	DATA 	Keypress: equal
+430.5273 	DATA 	Keypress: equal
+432.5255 	DATA 	Keypress: equal
+432.7552 	DATA 	Keypress: 3
+432.7554 	DATA 	Main trial 18 response: key=3, rt=0.4917, correct=1
+434.5301 	DATA 	Keypress: equal
+435.8537 	DATA 	Main trial 19 run 1: rule=ABA, A=circle, B=rectangle, A'=rectangle, B'=circle
+436.5270 	DATA 	Keypress: equal
+438.5273 	DATA 	Keypress: equal
+440.5289 	DATA 	Keypress: equal
+442.5283 	DATA 	Keypress: equal
+444.5261 	DATA 	Keypress: equal
+444.8217 	DATA 	Keypress: 4
+444.8220 	DATA 	Main trial 19 response: key=4, rt=0.5415, correct=1
+446.5283 	DATA 	Keypress: equal
+446.9569 	DATA 	Main trial 20 run 1: rule=ABB, A=rectangle, B=triangle, A'=triangle, B'=circle
+448.5273 	DATA 	Keypress: equal
+450.5297 	DATA 	Keypress: equal
+452.5295 	DATA 	Keypress: equal
+454.5294 	DATA 	Keypress: equal
+455.7782 	DATA 	Keypress: 1
+455.7784 	DATA 	Main trial 20 response: key=1, rt=0.5318, correct=0
+456.5283 	DATA 	Keypress: equal
+457.6606 	DATA 	Main trial 21 run 1: rule=ABB, A=triangle, B=star, A'=rectangle, B'=circle
+458.5274 	DATA 	Keypress: equal
+460.5298 	DATA 	Keypress: equal
+462.5283 	DATA 	Keypress: equal
+464.5270 	DATA 	Keypress: equal
+465.7281 	DATA 	Keypress: 4
+465.7283 	DATA 	Main trial 21 response: key=4, rt=0.4639, correct=1
+466.5271 	DATA 	Keypress: equal
+468.5299 	DATA 	Keypress: equal
+469.2524 	DATA 	Main trial 22 run 1: rule=ABB, A=star, B=triangle, A'=rectangle, B'=triangle
+470.5271 	DATA 	Keypress: equal
+472.5289 	DATA 	Keypress: equal
+474.5289 	DATA 	Keypress: equal
+476.5286 	DATA 	Keypress: equal
+477.8217 	DATA 	Keypress: 1
+477.8220 	DATA 	Main trial 22 response: key=1, rt=0.4746, correct=1
+478.5272 	DATA 	Keypress: equal
+480.5299 	DATA 	Keypress: equal
+480.7674 	DATA 	Main trial 23 run 1: rule=ABA, A=circle, B=rectangle, A'=star, B'=rectangle
+482.5274 	DATA 	Keypress: equal
+484.5290 	DATA 	Keypress: equal
+486.5272 	DATA 	Keypress: equal
+488.5279 	DATA 	Keypress: equal
+489.9678 	DATA 	Keypress: 1
+489.9681 	DATA 	Main trial 23 response: key=1, rt=0.5539, correct=1
+490.5270 	DATA 	Keypress: equal
+492.2850 	DATA 	Main trial 24 run 1: rule=ABB, A=star, B=rectangle, A'=star, B'=circle
+492.5302 	DATA 	Keypress: equal
+494.5268 	DATA 	Keypress: equal
+496.5287 	DATA 	Keypress: equal
+498.5274 	DATA 	Keypress: equal
+500.5274 	DATA 	Keypress: equal
+501.7339 	DATA 	Keypress: 2
+501.7342 	DATA 	Main trial 24 response: key=2, rt=0.7871, correct=1
+502.5283 	DATA 	Keypress: equal
+504.5271 	DATA 	Keypress: equal
+505.7890 	DATA 	Main trial 25 run 1: rule=ABB, A=circle, B=star, A'=triangle, B'=rectangle
+506.5299 	DATA 	Keypress: equal
+508.5281 	DATA 	Keypress: equal
+510.5272 	DATA 	Keypress: equal
+512.5275 	DATA 	Keypress: equal
+514.4547 	DATA 	Keypress: 2
+514.4549 	DATA 	Main trial 25 response: key=2, rt=0.5407, correct=1
+514.5293 	DATA 	Keypress: equal
+516.5277 	DATA 	Keypress: equal
+517.1314 	DATA 	Main trial 26 run 1: rule=ABA, A=circle, B=rectangle, A'=rectangle, B'=circle
+518.5287 	DATA 	Keypress: equal
+520.5287 	DATA 	Keypress: equal
+522.5275 	DATA 	Keypress: equal
+524.5282 	DATA 	Keypress: equal
+526.2021 	DATA 	Keypress: 4
+526.2023 	DATA 	Main trial 26 response: key=4, rt=0.4724, correct=1
+526.5269 	DATA 	Keypress: equal
+527.6356 	DATA 	Main trial 27 run 1: rule=ABB, A=triangle, B=rectangle, A'=star, B'=circle
+528.5271 	DATA 	Keypress: equal
+530.5271 	DATA 	Keypress: equal
+532.5276 	DATA 	Keypress: equal
+534.5286 	DATA 	Keypress: equal
+536.5262 	DATA 	Keypress: equal
+536.9589 	DATA 	Keypress: 2
+536.9592 	DATA 	Main trial 27 response: key=2, rt=0.5953, correct=1
+538.5273 	DATA 	Keypress: equal
+540.5300 	DATA 	Keypress: equal
+541.1264 	DATA 	Main trial 28 run 1: rule=ABB, A=rectangle, B=star, A'=circle, B'=star
+542.5301 	DATA 	Keypress: equal
+544.5276 	DATA 	Keypress: equal
+546.5293 	DATA 	Keypress: equal
+548.5281 	DATA 	Keypress: equal
+549.6281 	DATA 	Keypress: 1
+549.6283 	DATA 	Main trial 28 response: key=1, rt=0.5984, correct=1
+550.5273 	DATA 	Keypress: equal
+552.5276 	DATA 	Keypress: equal
+553.0452 	DATA 	Main trial 29 run 1: rule=ABB, A=circle, B=rectangle, A'=star, B'=triangle
+554.5287 	DATA 	Keypress: equal
+556.5266 	DATA 	Keypress: equal
+558.5272 	DATA 	Keypress: equal
+560.5283 	DATA 	Keypress: equal
+562.1822 	DATA 	Keypress: 4
+562.1824 	DATA 	Main trial 29 response: key=4, rt=0.5344, correct=1
+562.5282 	DATA 	Keypress: equal
+564.5272 	DATA 	Keypress: equal
+566.5277 	DATA 	Keypress: equal
+566.8733 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+568.5261 	DATA 	Keypress: equal
+570.5260 	DATA 	Keypress: equal
+572.5260 	DATA 	Keypress: equal
+573.6896 	DATA 	Keypress: 4
+573.6948 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Waiting for scanner...', units='norm', win=Window(...), wrapWidth=1)
+574.5260 	DATA 	Keypress: equal
+574.5263 	DATA 	Main trial 30 run 2: rule=ABA, A=rectangle, B=circle, A'=rectangle, B'=circle
+576.5273 	DATA 	Keypress: equal
+578.5297 	DATA 	Keypress: equal
+580.5301 	DATA 	Keypress: equal
+582.5278 	DATA 	Keypress: equal
+583.0612 	DATA 	Keypress: 4
+583.0614 	DATA 	Main trial 30 response: key=4, rt=0.4802, correct=1
+584.5272 	DATA 	Keypress: equal
+586.5271 	DATA 	Keypress: equal
+588.0513 	DATA 	Main trial 31 run 2: rule=ABA, A=triangle, B=star, A'=rectangle, B'=triangle
+588.5308 	DATA 	Keypress: equal
+590.5311 	DATA 	Keypress: equal
+592.5273 	DATA 	Keypress: equal
+594.5294 	DATA 	Keypress: equal
+596.5261 	DATA 	Keypress: equal
+596.8632 	DATA 	Keypress: 3
+596.8634 	DATA 	Main trial 31 response: key=3, rt=0.6165, correct=1
+598.5284 	DATA 	Keypress: equal
+598.9212 	DATA 	Main trial 32 run 2: rule=ABA, A=star, B=triangle, A'=rectangle, B'=circle
+600.5310 	DATA 	Keypress: equal
+602.5317 	DATA 	Keypress: equal
+604.5294 	DATA 	Keypress: equal
+606.5280 	DATA 	Keypress: equal
+607.9521 	DATA 	Keypress: 4
+607.9523 	DATA 	Main trial 32 response: key=4, rt=0.6212, correct=1
+608.5275 	DATA 	Keypress: equal
+610.5279 	DATA 	Keypress: equal
+611.4608 	DATA 	Main trial 33 run 2: rule=ABB, A=circle, B=rectangle, A'=triangle, B'=star
+612.5324 	DATA 	Keypress: equal
+614.5322 	DATA 	Keypress: equal
+616.5277 	DATA 	Keypress: equal
+618.5291 	DATA 	Keypress: equal
+620.5263 	DATA 	Keypress: equal
+620.5762 	DATA 	Keypress: 4
+620.5764 	DATA 	Main trial 33 response: key=4, rt=0.5286, correct=1
+622.5278 	DATA 	Keypress: equal
+623.4005 	DATA 	Main trial 34 run 2: rule=ABA, A=triangle, B=star, A'=triangle, B'=rectangle
+624.5320 	DATA 	Keypress: equal
+626.5302 	DATA 	Keypress: equal
+628.5279 	DATA 	Keypress: equal
+630.5301 	DATA 	Keypress: equal
+632.2001 	DATA 	Keypress: 2
+632.2003 	DATA 	Main trial 34 response: key=2, rt=0.7202, correct=1
+632.5293 	DATA 	Keypress: equal
+634.5278 	DATA 	Keypress: equal
+635.9284 	DATA 	Main trial 35 run 2: rule=ABB, A=rectangle, B=circle, A'=star, B'=circle
+636.5307 	DATA 	Keypress: equal
+638.5315 	DATA 	Keypress: equal
+640.5281 	DATA 	Keypress: equal
+642.5321 	DATA 	Keypress: equal
+643.6271 	DATA 	Keypress: 3
+643.6273 	DATA 	Main trial 35 response: key=3, rt=0.5808, correct=1
+644.5289 	DATA 	Keypress: equal
+646.5282 	DATA 	Keypress: equal
+646.8343 	DATA 	Main trial 36 run 2: rule=ABB, A=rectangle, B=star, A'=rectangle, B'=circle
+648.5284 	DATA 	Keypress: equal
+650.5291 	DATA 	Keypress: equal
+652.5278 	DATA 	Keypress: equal
+654.5298 	DATA 	Keypress: equal
+656.5266 	DATA 	Keypress: equal
+656.7057 	DATA 	Keypress: 4
+656.7060 	DATA 	Main trial 36 response: key=4, rt=0.4917, correct=1
+658.5289 	DATA 	Keypress: equal
+660.2767 	DATA 	Main trial 37 run 2: rule=ABB, A=triangle, B=circle, A'=circle, B'=star
+660.5281 	DATA 	Keypress: equal
+662.5306 	DATA 	Keypress: equal
+664.5279 	DATA 	Keypress: equal
+666.5272 	DATA 	Keypress: equal
+668.5267 	DATA 	Keypress: equal
+669.3101 	DATA 	Keypress: 4
+669.3102 	DATA 	Main trial 37 response: key=4, rt=1.1961, correct=1
+670.5290 	DATA 	Keypress: equal
+672.5286 	DATA 	Keypress: equal
+673.4781 	DATA 	Main trial 38 run 2: rule=ABA, A=star, B=circle, A'=circle, B'=rectangle
+674.5306 	DATA 	Keypress: equal
+676.5290 	DATA 	Keypress: equal
+678.5299 	DATA 	Keypress: equal
+680.5318 	DATA 	Keypress: equal
+682.4930 	DATA 	Keypress: 3
+682.4932 	DATA 	Main trial 38 response: key=3, rt=0.5292, correct=1
+682.5308 	DATA 	Keypress: equal
+684.5281 	DATA 	Keypress: equal
+684.6240 	DATA 	Main trial 39 run 2: rule=ABA, A=rectangle, B=triangle, A'=triangle, B'=star
+686.5279 	DATA 	Keypress: equal
+688.5329 	DATA 	Keypress: equal
+690.5281 	DATA 	Keypress: equal
+692.5271 	DATA 	Keypress: equal
+692.9671 	DATA 	Keypress: 4
+692.9673 	DATA 	Main trial 39 response: key=4, rt=0.5031, correct=1
+694.5279 	DATA 	Keypress: equal
+696.3621 	DATA 	Main trial 40 run 2: rule=ABA, A=rectangle, B=circle, A'=star, B'=circle
+696.5303 	DATA 	Keypress: equal
+698.5322 	DATA 	Keypress: equal
+700.5335 	DATA 	Keypress: equal
+702.5306 	DATA 	Keypress: equal
+704.5322 	DATA 	Keypress: equal
+705.3481 	DATA 	Keypress: 2
+705.3485 	DATA 	Main trial 40 response: key=2, rt=0.8169, correct=1
+706.5280 	DATA 	Keypress: equal
+708.2478 	DATA 	Main trial 41 run 2: rule=ABB, A=star, B=triangle, A'=circle, B'=rectangle
+708.5281 	DATA 	Keypress: equal
+710.5314 	DATA 	Keypress: equal
+712.5277 	DATA 	Keypress: equal
+714.5305 	DATA 	Keypress: equal
+716.1047 	DATA 	Keypress: 4
+716.1050 	DATA 	Main trial 41 response: key=4, rt=0.5236, correct=1
+716.5298 	DATA 	Keypress: equal
+718.5292 	DATA 	Keypress: equal
+718.6922 	DATA 	Main trial 42 run 2: rule=ABA, A=circle, B=rectangle, A'=triangle, B'=star
+720.5279 	DATA 	Keypress: equal
+722.5287 	DATA 	Keypress: equal
+724.5289 	DATA 	Keypress: equal
+726.5280 	DATA 	Keypress: equal
+727.7765 	DATA 	Keypress: 1
+727.7766 	DATA 	Main trial 42 response: key=1, rt=0.5118, correct=1
+728.5304 	DATA 	Keypress: equal
+730.5309 	DATA 	Keypress: equal
+731.6882 	DATA 	Main trial 43 run 2: rule=ABA, A=triangle, B=rectangle, A'=triangle, B'=rectangle
+732.5293 	DATA 	Keypress: equal
+734.5292 	DATA 	Keypress: equal
+736.5279 	DATA 	Keypress: equal
+738.5281 	DATA 	Keypress: equal
+740.5264 	DATA 	Keypress: equal
+740.5586 	DATA 	Keypress: 3
+740.5593 	DATA 	Main trial 43 response: key=3, rt=0.8947, correct=1
+742.3574 	DATA 	Main trial 44 run 2: rule=ABA, A=star, B=rectangle, A'=circle, B'=star
+742.5306 	DATA 	Keypress: equal
+744.5283 	DATA 	Keypress: equal
+746.5290 	DATA 	Keypress: equal
+748.5305 	DATA 	Keypress: equal
+750.5267 	DATA 	Keypress: equal
+750.8923 	DATA 	Keypress: 4
+750.8929 	DATA 	Main trial 44 response: key=4, rt=0.6121, correct=1
+752.5279 	DATA 	Keypress: equal
+754.3693 	DATA 	Main trial 45 run 2: rule=ABB, A=circle, B=rectangle, A'=rectangle, B'=circle
+754.5291 	DATA 	Keypress: equal
+756.5288 	DATA 	Keypress: equal
+758.5301 	DATA 	Keypress: equal
+760.5282 	DATA 	Keypress: equal
+762.5271 	DATA 	Keypress: equal
+762.9857 	DATA 	Keypress: 2
+762.9859 	DATA 	Main trial 45 response: key=2, rt=0.5712, correct=1
+764.5313 	DATA 	Keypress: equal
+765.6918 	DATA 	Main trial 46 run 2: rule=ABA, A=circle, B=triangle, A'=star, B'=triangle
+766.5330 	DATA 	Keypress: equal
+768.5304 	DATA 	Keypress: equal
+770.5297 	DATA 	Keypress: equal
+772.5304 	DATA 	Keypress: equal
+774.5269 	DATA 	Keypress: equal
+774.6509 	DATA 	Keypress: 2
+774.6511 	DATA 	Main trial 46 response: key=2, rt=0.6033, correct=1
+776.5300 	DATA 	Keypress: equal
+776.8282 	DATA 	Main trial 47 run 2: rule=ABA, A=circle, B=star, A'=triangle, B'=rectangle
+778.5278 	DATA 	Keypress: equal
+780.5286 	DATA 	Keypress: equal
+782.5287 	DATA 	Keypress: equal
+784.5281 	DATA 	Keypress: equal
+785.9810 	DATA 	Keypress: 2
+785.9812 	DATA 	Main trial 47 response: key=2, rt=0.5666, correct=1
+786.5299 	DATA 	Keypress: equal
+788.2170 	DATA 	Main trial 48 run 2: rule=ABA, A=rectangle, B=star, A'=rectangle, B'=triangle
+788.5285 	DATA 	Keypress: equal
+790.5303 	DATA 	Keypress: equal
+792.5286 	DATA 	Keypress: equal
+794.5294 	DATA 	Keypress: equal
+796.5267 	DATA 	Keypress: equal
+796.6616 	DATA 	Keypress: 4
+796.6620 	DATA 	Main trial 48 response: key=4, rt=0.5473, correct=1
+798.5283 	DATA 	Keypress: equal
+800.5296 	DATA 	Keypress: equal
+800.6222 	DATA 	Main trial 49 run 2: rule=ABB, A=rectangle, B=triangle, A'=rectangle, B'=circle
+802.5290 	DATA 	Keypress: equal
+804.5301 	DATA 	Keypress: equal
+806.5282 	DATA 	Keypress: equal
+808.5297 	DATA 	Keypress: equal
+809.1736 	DATA 	Keypress: 3
+809.1739 	DATA 	Main trial 49 response: key=3, rt=0.6594, correct=1
+810.5292 	DATA 	Keypress: equal
+812.5301 	DATA 	Keypress: equal
+812.7839 	DATA 	Main trial 50 run 2: rule=ABA, A=rectangle, B=circle, A'=triangle, B'=rectangle
+814.5292 	DATA 	Keypress: equal
+816.5300 	DATA 	Keypress: equal
+818.5283 	DATA 	Keypress: equal
+820.5281 	DATA 	Keypress: equal
+821.4599 	DATA 	Keypress: 1
+821.4604 	DATA 	Main trial 50 response: key=1, rt=0.5299, correct=1
+822.5303 	DATA 	Keypress: equal
+824.0559 	DATA 	Main trial 51 run 2: rule=ABA, A=circle, B=star, A'=star, B'=circle
+824.5282 	DATA 	Keypress: equal
+826.5291 	DATA 	Keypress: equal
+828.5310 	DATA 	Keypress: equal
+830.5281 	DATA 	Keypress: equal
+832.5301 	DATA 	Keypress: equal
+833.5940 	DATA 	Keypress: 3
+833.5942 	DATA 	Main trial 51 response: key=3, rt=0.6631, correct=1
+834.5279 	DATA 	Keypress: equal
+835.2120 	DATA 	Main trial 52 run 2: rule=ABA, A=triangle, B=circle, A'=rectangle, B'=triangle
+836.5307 	DATA 	Keypress: equal
+838.5308 	DATA 	Keypress: equal
+840.5281 	DATA 	Keypress: equal
+842.5281 	DATA 	Keypress: equal
+843.5432 	DATA 	Keypress: 1
+843.5434 	DATA 	Main trial 52 response: key=1, rt=0.6622, correct=1
+844.5290 	DATA 	Keypress: equal
+844.8027 	DATA 	Main trial 53 run 2: rule=ABB, A=triangle, B=star, A'=rectangle, B'=triangle
+846.5282 	DATA 	Keypress: equal
+848.5298 	DATA 	Keypress: equal
+850.5290 	DATA 	Keypress: equal
+852.5317 	DATA 	Keypress: equal
+854.5264 	DATA 	Keypress: equal
+854.6509 	DATA 	Keypress: 2
+854.6512 	DATA 	Main trial 53 response: key=2, rt=0.9198, correct=1
+856.5291 	DATA 	Keypress: equal
+856.9713 	DATA 	Main trial 54 run 2: rule=ABA, A=circle, B=star, A'=star, B'=triangle
+858.5281 	DATA 	Keypress: equal
+860.5282 	DATA 	Keypress: equal
+862.5313 	DATA 	Keypress: equal
+864.5314 	DATA 	Keypress: equal
+866.4418 	DATA 	Keypress: 3
+866.4426 	DATA 	Main trial 54 response: key=3, rt=1.2609, correct=0
+866.5312 	DATA 	Keypress: equal
+868.5304 	DATA 	Keypress: equal
+870.5304 	DATA 	Keypress: equal
+870.9944 	DATA 	Main trial 55 run 2: rule=ABA, A=rectangle, B=triangle, A'=star, B'=circle
+872.5279 	DATA 	Keypress: equal
+874.5307 	DATA 	Keypress: equal
+876.5293 	DATA 	Keypress: equal
+878.5283 	DATA 	Keypress: equal
+879.9186 	DATA 	Keypress: 2
+879.9191 	DATA 	Main trial 55 response: key=2, rt=0.7542, correct=1
+880.5284 	DATA 	Keypress: equal
+882.5290 	DATA 	Keypress: equal
+882.9206 	DATA 	Main trial 56 run 2: rule=ABB, A=rectangle, B=triangle, A'=circle, B'=rectangle
+884.5294 	DATA 	Keypress: equal
+886.5295 	DATA 	Keypress: equal
+888.5318 	DATA 	Keypress: equal
+890.5281 	DATA 	Keypress: equal
+892.1420 	DATA 	Keypress: 4
+892.1427 	DATA 	Main trial 56 response: key=4, rt=0.5278, correct=1
+892.5297 	DATA 	Keypress: equal
+894.5292 	DATA 	Keypress: equal
+896.5282 	DATA 	Keypress: equal
+896.7873 	DATA 	Main trial 57 run 2: rule=ABA, A=triangle, B=rectangle, A'=star, B'=triangle
+898.5294 	DATA 	Keypress: equal
+900.5295 	DATA 	Keypress: equal
+902.5302 	DATA 	Keypress: equal
+904.5311 	DATA 	Keypress: equal
+906.0226 	DATA 	Keypress: 4
+906.0229 	DATA 	Main trial 57 response: key=4, rt=0.5079, correct=1
+906.5281 	DATA 	Keypress: equal
+908.3073 	DATA 	Main trial 58 run 2: rule=ABA, A=triangle, B=rectangle, A'=triangle, B'=circle
+908.5307 	DATA 	Keypress: equal
+910.5282 	DATA 	Keypress: equal
+912.5281 	DATA 	Keypress: equal
+914.5285 	DATA 	Keypress: equal
+916.5293 	DATA 	Keypress: equal
+917.7200 	DATA 	Keypress: 2
+917.7202 	DATA 	Main trial 58 response: key=2, rt=0.6565, correct=1
+918.5280 	DATA 	Keypress: equal
+920.5290 	DATA 	Keypress: equal
+921.1468 	DATA 	Main trial 59 run 2: rule=ABA, A=triangle, B=circle, A'=triangle, B'=rectangle
+922.5283 	DATA 	Keypress: equal
+924.5308 	DATA 	Keypress: equal
+926.5283 	DATA 	Keypress: equal
+928.5324 	DATA 	Keypress: equal
+930.5259 	DATA 	Keypress: equal
+930.5905 	DATA 	Keypress: 3
+930.5907 	DATA 	Main trial 59 response: key=3, rt=0.5591, correct=1
+932.5279 	DATA 	Keypress: equal
+933.0706 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+934.5268 	DATA 	Keypress: equal
+936.5267 	DATA 	Keypress: equal
+938.5269 	DATA 	Keypress: equal
+940.5259 	DATA 	Keypress: equal
+942.5267 	DATA 	Keypress: equal
+944.5267 	DATA 	Keypress: equal
+946.5268 	DATA 	Keypress: equal
+948.5260 	DATA 	Keypress: equal
+950.5261 	DATA 	Keypress: equal
+951.6726 	DATA 	Keypress: 3
+951.6785 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Waiting for scanner...', units='norm', win=Window(...), wrapWidth=1)
+952.5267 	DATA 	Keypress: equal
+952.5270 	DATA 	Main trial 60 run 3: rule=ABB, A=circle, B=triangle, A'=rectangle, B'=circle
+954.5282 	DATA 	Keypress: equal
+956.5288 	DATA 	Keypress: equal
+958.5318 	DATA 	Keypress: equal
+960.5285 	DATA 	Keypress: equal
+961.3566 	DATA 	Keypress: 4
+961.3569 	DATA 	Main trial 60 response: key=4, rt=0.5253, correct=1
+962.5300 	DATA 	Keypress: equal
+963.7735 	DATA 	Main trial 61 run 3: rule=ABA, A=star, B=circle, A'=rectangle, B'=circle
+964.5311 	DATA 	Keypress: equal
+966.5285 	DATA 	Keypress: equal
+968.5281 	DATA 	Keypress: equal
+970.5288 	DATA 	Keypress: equal
+972.5290 	DATA 	Keypress: equal
+973.3570 	DATA 	Keypress: 3
+973.3572 	DATA 	Main trial 61 response: key=3, rt=0.5426, correct=1
+974.5285 	DATA 	Keypress: equal
+976.3406 	DATA 	Main trial 62 run 3: rule=ABB, A=star, B=rectangle, A'=triangle, B'=rectangle
+976.5279 	DATA 	Keypress: equal
+978.5279 	DATA 	Keypress: equal
+980.5321 	DATA 	Keypress: equal
+982.5307 	DATA 	Keypress: equal
+984.5284 	DATA 	Keypress: equal
+985.6330 	DATA 	Keypress: 4
+985.6332 	DATA 	Main trial 62 response: key=4, rt=0.6523, correct=1
+986.5279 	DATA 	Keypress: equal
+988.0430 	DATA 	Main trial 63 run 3: rule=ABB, A=rectangle, B=circle, A'=triangle, B'=circle
+988.5284 	DATA 	Keypress: equal
+990.5285 	DATA 	Keypress: equal
+992.5278 	DATA 	Keypress: equal
+994.5333 	DATA 	Keypress: equal
+996.5283 	DATA 	Keypress: equal
+997.0630 	DATA 	Keypress: 4
+997.0632 	DATA 	Main trial 63 response: key=4, rt=0.5652, correct=1
+998.5280 	DATA 	Keypress: equal
+1000.5336 	DATA 	Keypress: equal
+1000.6491 	DATA 	Main trial 64 run 3: rule=ABA, A=star, B=rectangle, A'=rectangle, B'=triangle
+1002.5293 	DATA 	Keypress: equal
+1004.5311 	DATA 	Keypress: equal
+1006.5282 	DATA 	Keypress: equal
+1008.5310 	DATA 	Keypress: equal
+1009.9150 	DATA 	Keypress: 4
+1009.9152 	DATA 	Main trial 64 response: key=4, rt=0.6670, correct=1
+1010.5293 	DATA 	Keypress: equal
+1012.5296 	DATA 	Keypress: equal
+1013.3570 	DATA 	Main trial 65 run 3: rule=ABA, A=rectangle, B=triangle, A'=star, B'=rectangle
+1014.5315 	DATA 	Keypress: equal
+1016.5332 	DATA 	Keypress: equal
+1018.5325 	DATA 	Keypress: equal
+1020.5312 	DATA 	Keypress: equal
+1021.4849 	DATA 	Keypress: 2
+1021.4851 	DATA 	Main trial 65 response: key=2, rt=0.5374, correct=1
+1022.5326 	DATA 	Keypress: equal
+1023.9359 	DATA 	Main trial 66 run 3: rule=ABA, A=triangle, B=star, A'=rectangle, B'=triangle
+1024.5348 	DATA 	Keypress: equal
+1026.5290 	DATA 	Keypress: equal
+1028.5304 	DATA 	Keypress: equal
+1030.5308 	DATA 	Keypress: equal
+1032.5337 	DATA 	Keypress: equal
+1033.4717 	DATA 	Keypress: 3
+1033.4719 	DATA 	Main trial 66 response: key=3, rt=0.6735, correct=1
+1034.5292 	DATA 	Keypress: equal
+1036.5277 	DATA 	Keypress: equal
+1036.6488 	DATA 	Main trial 67 run 3: rule=ABB, A=star, B=circle, A'=circle, B'=triangle
+1038.5307 	DATA 	Keypress: equal
+1040.5324 	DATA 	Keypress: equal
+1042.5297 	DATA 	Keypress: equal
+1044.5324 	DATA 	Keypress: equal
+1045.9216 	DATA 	Keypress: 1
+1045.9218 	DATA 	Main trial 67 response: key=1, rt=0.7734, correct=1
+1046.5283 	DATA 	Keypress: equal
+1048.5287 	DATA 	Keypress: equal
+1048.8453 	DATA 	Main trial 68 run 3: rule=ABA, A=triangle, B=rectangle, A'=star, B'=rectangle
+1050.5292 	DATA 	Keypress: equal
+1052.5288 	DATA 	Keypress: equal
+1054.5325 	DATA 	Keypress: equal
+1056.5287 	DATA 	Keypress: equal
+1058.0407 	DATA 	Keypress: 3
+1058.0410 	DATA 	Main trial 68 response: key=3, rt=0.5260, correct=1
+1058.5288 	DATA 	Keypress: equal
+1060.5334 	DATA 	Keypress: equal
+1061.5907 	DATA 	Main trial 69 run 3: rule=ABA, A=circle, B=star, A'=triangle, B'=star
+1062.5289 	DATA 	Keypress: equal
+1064.5316 	DATA 	Keypress: equal
+1066.5285 	DATA 	Keypress: equal
+1068.5286 	DATA 	Keypress: equal
+1070.1869 	DATA 	Keypress: 2
+1070.1871 	DATA 	Main trial 69 response: key=2, rt=0.4557, correct=1
+1070.5282 	DATA 	Keypress: equal
+1072.5293 	DATA 	Keypress: equal
+1074.5290 	DATA 	Keypress: equal
+1075.0860 	DATA 	Main trial 70 run 3: rule=ABA, A=star, B=circle, A'=rectangle, B'=circle
+1076.5316 	DATA 	Keypress: equal
+1078.5307 	DATA 	Keypress: equal
+1080.5289 	DATA 	Keypress: equal
+1082.5287 	DATA 	Keypress: equal
+1084.4896 	DATA 	Keypress: 3
+1084.4898 	DATA 	Main trial 70 response: key=3, rt=0.6418, correct=1
+1084.5281 	DATA 	Keypress: equal
+1086.5285 	DATA 	Keypress: equal
+1087.5245 	DATA 	Main trial 71 run 3: rule=ABB, A=triangle, B=rectangle, A'=rectangle, B'=star
+1088.5289 	DATA 	Keypress: equal
+1090.5306 	DATA 	Keypress: equal
+1092.5333 	DATA 	Keypress: equal
+1094.5292 	DATA 	Keypress: equal
+1096.5269 	DATA 	Keypress: equal
+1096.8075 	DATA 	Keypress: 1
+1096.8080 	DATA 	Main trial 71 response: key=1, rt=0.7116, correct=1
+1098.5283 	DATA 	Keypress: equal
+1099.1488 	DATA 	Main trial 72 run 3: rule=ABA, A=star, B=triangle, A'=triangle, B'=circle
+1100.5293 	DATA 	Keypress: equal
+1102.5282 	DATA 	Keypress: equal
+1104.5278 	DATA 	Keypress: equal
+1106.5279 	DATA 	Keypress: equal
+1107.2580 	DATA 	Keypress: 3
+1107.2583 	DATA 	Main trial 72 response: key=3, rt=0.4630, correct=1
+1108.5295 	DATA 	Keypress: equal
+1109.0318 	DATA 	Main trial 73 run 3: rule=ABB, A=star, B=triangle, A'=circle, B'=star
+1110.5309 	DATA 	Keypress: equal
+1112.5305 	DATA 	Keypress: equal
+1114.5289 	DATA 	Keypress: equal
+1116.5284 	DATA 	Keypress: equal
+1117.8087 	DATA 	Keypress: 2
+1117.8095 	DATA 	Main trial 73 response: key=2, rt=0.5106, correct=1
+1118.5285 	DATA 	Keypress: equal
+1120.5290 	DATA 	Keypress: equal
+1121.2011 	DATA 	Main trial 74 run 3: rule=ABA, A=star, B=rectangle, A'=triangle, B'=star
+1122.5306 	DATA 	Keypress: equal
+1124.5311 	DATA 	Keypress: equal
+1126.5288 	DATA 	Keypress: equal
+1128.5273 	DATA 	Keypress: equal
+1129.9688 	DATA 	Keypress: 4
+1129.9693 	DATA 	Main trial 74 response: key=4, rt=1.6207, correct=0
+1130.5308 	DATA 	Keypress: equal
+1131.6009 	DATA 	Main trial 75 run 3: rule=ABB, A=star, B=circle, A'=triangle, B'=rectangle
+1132.5289 	DATA 	Keypress: equal
+1134.5290 	DATA 	Keypress: equal
+1136.5291 	DATA 	Keypress: equal
+1138.5291 	DATA 	Keypress: equal
+1139.8279 	DATA 	Keypress: 4
+1139.8281 	DATA 	Main trial 75 response: key=4, rt=0.6136, correct=1
+1140.5305 	DATA 	Keypress: equal
+1142.5297 	DATA 	Keypress: equal
+1143.0933 	DATA 	Main trial 76 run 3: rule=ABB, A=rectangle, B=circle, A'=circle, B'=triangle
+1144.5289 	DATA 	Keypress: equal
+1146.5313 	DATA 	Keypress: equal
+1148.5340 	DATA 	Keypress: equal
+1150.5289 	DATA 	Keypress: equal
+1152.5277 	DATA 	Keypress: equal
+1152.8010 	DATA 	Keypress: 2
+1152.8011 	DATA 	Main trial 76 response: key=2, rt=0.4360, correct=1
+1154.5312 	DATA 	Keypress: equal
+1156.2054 	DATA 	Main trial 77 run 3: rule=ABA, A=rectangle, B=circle, A'=star, B'=circle
+1156.5333 	DATA 	Keypress: equal
+1158.5303 	DATA 	Keypress: equal
+1160.5325 	DATA 	Keypress: equal
+1162.5300 	DATA 	Keypress: equal
+1164.5307 	DATA 	Keypress: equal
+1165.1600 	DATA 	Keypress: 2
+1165.1602 	DATA 	Main trial 77 response: key=2, rt=0.5784, correct=1
+1166.5286 	DATA 	Keypress: equal
+1168.4871 	DATA 	Main trial 78 run 3: rule=ABB, A=triangle, B=circle, A'=star, B'=circle
+1168.5296 	DATA 	Keypress: equal
+1170.5283 	DATA 	Keypress: equal
+1172.5328 	DATA 	Keypress: equal
+1174.5290 	DATA 	Keypress: equal
+1176.5275 	DATA 	Keypress: equal
+1177.0110 	DATA 	Keypress: 3
+1177.0112 	DATA 	Main trial 78 response: key=3, rt=0.5460, correct=0
+1178.5305 	DATA 	Keypress: equal
+1179.7905 	DATA 	Main trial 79 run 3: rule=ABA, A=rectangle, B=triangle, A'=triangle, B'=circle
+1180.5304 	DATA 	Keypress: equal
+1182.5304 	DATA 	Keypress: equal
+1184.5323 	DATA 	Keypress: equal
+1186.5286 	DATA 	Keypress: equal
+1188.4270 	DATA 	Keypress: 4
+1188.4274 	DATA 	Main trial 79 response: key=4, rt=0.7124, correct=1
+1188.5292 	DATA 	Keypress: equal
+1189.8240 	DATA 	Main trial 80 run 3: rule=ABA, A=circle, B=triangle, A'=circle, B'=triangle
+1190.5305 	DATA 	Keypress: equal
+1192.5307 	DATA 	Keypress: equal
+1194.5288 	DATA 	Keypress: equal
+1196.5311 	DATA 	Keypress: equal
+1198.4829 	DATA 	Keypress: 1
+1198.4831 	DATA 	Main trial 80 response: key=1, rt=0.5513, correct=1
+1198.5319 	DATA 	Keypress: equal
+1200.5310 	DATA 	Keypress: equal
+1202.5292 	DATA 	Keypress: equal
+1203.1990 	DATA 	Main trial 81 run 3: rule=ABA, A=circle, B=star, A'=triangle, B'=star
+1204.5294 	DATA 	Keypress: equal
+1206.5306 	DATA 	Keypress: equal
+1208.5292 	DATA 	Keypress: equal
+1210.5298 	DATA 	Keypress: equal
+1212.3927 	DATA 	Keypress: 1
+1212.3934 	DATA 	Main trial 81 response: key=1, rt=0.5616, correct=1
+1212.5309 	DATA 	Keypress: equal
+1214.5290 	DATA 	Keypress: equal
+1215.4775 	DATA 	Main trial 82 run 3: rule=ABB, A=star, B=rectangle, A'=triangle, B'=rectangle
+1216.5297 	DATA 	Keypress: equal
+1218.5287 	DATA 	Keypress: equal
+1220.5290 	DATA 	Keypress: equal
+1222.5327 	DATA 	Keypress: equal
+1224.4384 	DATA 	Keypress: 2
+1224.4387 	DATA 	Main trial 82 response: key=2, rt=0.4907, correct=0
+1224.5303 	DATA 	Keypress: equal
+1226.5285 	DATA 	Keypress: equal
+1226.7405 	DATA 	Main trial 83 run 3: rule=ABA, A=circle, B=rectangle, A'=rectangle, B'=star
+1228.5290 	DATA 	Keypress: equal
+1230.5311 	DATA 	Keypress: equal
+1232.5305 	DATA 	Keypress: equal
+1234.5284 	DATA 	Keypress: equal
+1236.4139 	DATA 	Keypress: 3
+1236.4142 	DATA 	Main trial 83 response: key=3, rt=0.5188, correct=1
+1236.5277 	DATA 	Keypress: equal
+1238.5287 	DATA 	Keypress: equal
+1239.6374 	DATA 	Main trial 84 run 3: rule=ABB, A=rectangle, B=star, A'=triangle, B'=rectangle
+1240.5287 	DATA 	Keypress: equal
+1242.5288 	DATA 	Keypress: equal
+1244.5287 	DATA 	Keypress: equal
+1246.5309 	DATA 	Keypress: equal
+1248.5336 	DATA 	Keypress: equal
+1249.1103 	DATA 	Keypress: 1
+1249.1104 	DATA 	Main trial 84 response: key=1, rt=0.5776, correct=1
+1250.5286 	DATA 	Keypress: equal
+1251.1873 	DATA 	Main trial 85 run 3: rule=ABA, A=star, B=triangle, A'=triangle, B'=star
+1252.5309 	DATA 	Keypress: equal
+1254.5286 	DATA 	Keypress: equal
+1256.5292 	DATA 	Keypress: equal
+1258.5327 	DATA 	Keypress: equal
+1260.2914 	DATA 	Keypress: 3
+1260.2921 	DATA 	Main trial 85 response: key=3, rt=0.6584, correct=1
+1260.5293 	DATA 	Keypress: equal
+1262.5291 	DATA 	Keypress: equal
+1262.8859 	DATA 	Main trial 86 run 3: rule=ABA, A=circle, B=triangle, A'=star, B'=triangle
+1264.5283 	DATA 	Keypress: equal
+1266.5278 	DATA 	Keypress: equal
+1268.5329 	DATA 	Keypress: equal
+1270.5289 	DATA 	Keypress: equal
+1272.4039 	DATA 	Keypress: 1
+1272.4041 	DATA 	Main trial 86 response: key=1, rt=0.9225, correct=1
+1272.5296 	DATA 	Keypress: equal
+1274.5300 	DATA 	Keypress: equal
+1275.2703 	DATA 	Main trial 87 run 3: rule=ABA, A=rectangle, B=star, A'=circle, B'=rectangle
+1276.5297 	DATA 	Keypress: equal
+1278.5302 	DATA 	Keypress: equal
+1280.5311 	DATA 	Keypress: equal
+1282.5298 	DATA 	Keypress: equal
+1284.1386 	DATA 	Keypress: 3
+1284.1388 	DATA 	Main trial 87 response: key=3, rt=0.5745, correct=1
+1284.5310 	DATA 	Keypress: equal
+1285.0168 	DATA 	Main trial 88 run 3: rule=ABB, A=triangle, B=star, A'=star, B'=rectangle
+1286.5289 	DATA 	Keypress: equal
+1288.5288 	DATA 	Keypress: equal
+1290.5317 	DATA 	Keypress: equal
+1292.5324 	DATA 	Keypress: equal
+1293.9789 	DATA 	Keypress: 1
+1293.9791 	DATA 	Main trial 88 response: key=1, rt=0.6147, correct=1
+1294.5286 	DATA 	Keypress: equal
+1296.3400 	DATA 	Main trial 89 run 3: rule=ABB, A=rectangle, B=circle, A'=rectangle, B'=circle
+1296.5327 	DATA 	Keypress: equal
+1298.5321 	DATA 	Keypress: equal
+1300.5304 	DATA 	Keypress: equal
+1302.5296 	DATA 	Keypress: equal
+1304.5275 	DATA 	Keypress: equal
+1304.7029 	DATA 	Keypress: 3
+1304.7030 	DATA 	Main trial 89 response: key=3, rt=0.4711, correct=1
+1306.5290 	DATA 	Keypress: equal
+1308.5294 	DATA 	Keypress: equal
+1308.5889 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+1310.5270 	DATA 	Keypress: equal
+1312.5270 	DATA 	Keypress: equal
+1314.5271 	DATA 	Keypress: equal
+1316.5274 	DATA 	Keypress: equal
+1318.5274 	DATA 	Keypress: equal
+1320.5270 	DATA 	Keypress: equal
+1322.5274 	DATA 	Keypress: equal
+1324.5271 	DATA 	Keypress: equal
+1326.5268 	DATA 	Keypress: equal
+1328.5269 	DATA 	Keypress: equal
+1330.5275 	DATA 	Keypress: equal
+1332.5274 	DATA 	Keypress: equal
+1334.5275 	DATA 	Keypress: equal
+1336.5274 	DATA 	Keypress: equal
+1338.5275 	DATA 	Keypress: equal
+1340.5275 	DATA 	Keypress: equal
+1342.5269 	DATA 	Keypress: equal
+1344.5274 	DATA 	Keypress: equal
+1345.7178 	DATA 	Keypress: 3
+1345.7225 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Waiting for scanner...', units='norm', win=Window(...), wrapWidth=1)
+1346.5275 	DATA 	Keypress: equal
+1346.5277 	DATA 	Main trial 90 run 4: rule=ABB, A=triangle, B=star, A'=star, B'=triangle
+1348.5291 	DATA 	Keypress: equal
+1350.5289 	DATA 	Keypress: equal
+1352.5315 	DATA 	Keypress: equal
+1354.5281 	DATA 	Keypress: equal
+1354.9838 	DATA 	Keypress: 4
+1354.9840 	DATA 	Main trial 90 response: key=4, rt=0.5185, correct=1
+1356.5288 	DATA 	Keypress: equal
+1358.5285 	DATA 	Keypress: equal
+1359.6645 	DATA 	Main trial 91 run 4: rule=ABA, A=triangle, B=star, A'=triangle, B'=rectangle
+1360.5301 	DATA 	Keypress: equal
+1362.5297 	DATA 	Keypress: equal
+1364.5291 	DATA 	Keypress: equal
+1366.5291 	DATA 	Keypress: equal
+1368.4025 	DATA 	Keypress: 3
+1368.4028 	DATA 	Main trial 91 response: key=3, rt=0.7372, correct=1
+1368.5292 	DATA 	Keypress: equal
+1370.1793 	DATA 	Main trial 92 run 4: rule=ABB, A=circle, B=star, A'=circle, B'=star
+1370.5287 	DATA 	Keypress: equal
+1372.5286 	DATA 	Keypress: equal
+1374.5285 	DATA 	Keypress: equal
+1376.5322 	DATA 	Keypress: equal
+1378.5274 	DATA 	Keypress: equal
+1378.5968 	DATA 	Keypress: 2
+1378.5969 	DATA 	Main trial 92 response: key=2, rt=0.6318, correct=1
+1380.5317 	DATA 	Keypress: equal
+1382.2646 	DATA 	Main trial 93 run 4: rule=ABB, A=rectangle, B=star, A'=circle, B'=rectangle
+1382.5301 	DATA 	Keypress: equal
+1384.5288 	DATA 	Keypress: equal
+1386.5294 	DATA 	Keypress: equal
+1388.5337 	DATA 	Keypress: equal
+1390.5293 	DATA 	Keypress: equal
+1391.6210 	DATA 	Keypress: 2
+1391.6213 	DATA 	Main trial 93 response: key=2, rt=1.0226, correct=1
+1392.5295 	DATA 	Keypress: equal
+1394.3353 	DATA 	Main trial 94 run 4: rule=ABB, A=star, B=circle, A'=star, B'=rectangle
+1394.5287 	DATA 	Keypress: equal
+1396.5284 	DATA 	Keypress: equal
+1398.5289 	DATA 	Keypress: equal
+1400.5336 	DATA 	Keypress: equal
+1402.5312 	DATA 	Keypress: equal
+1403.9119 	DATA 	Keypress: 4
+1403.9122 	DATA 	Main trial 94 response: key=4, rt=0.8812, correct=1
+1404.5298 	DATA 	Keypress: equal
+1406.5305 	DATA 	Keypress: equal
+1407.0738 	DATA 	Main trial 95 run 4: rule=ABA, A=circle, B=triangle, A'=rectangle, B'=triangle
+1408.5286 	DATA 	Keypress: equal
+1410.5331 	DATA 	Keypress: equal
+1412.5289 	DATA 	Keypress: equal
+1414.5299 	DATA 	Keypress: equal
+1416.0208 	DATA 	Keypress: 2
+1416.0212 	DATA 	Main trial 95 response: key=2, rt=0.5892, correct=1
+1416.5294 	DATA 	Keypress: equal
+1418.0179 	DATA 	Main trial 96 run 4: rule=ABA, A=star, B=triangle, A'=rectangle, B'=triangle
+1418.5295 	DATA 	Keypress: equal
+1420.5342 	DATA 	Keypress: equal
+1422.5314 	DATA 	Keypress: equal
+1424.5315 	DATA 	Keypress: equal
+1426.5279 	DATA 	Keypress: equal
+1426.9988 	DATA 	Keypress: 1
+1426.9990 	DATA 	Main trial 96 response: key=1, rt=0.6840, correct=1
+1428.5341 	DATA 	Keypress: equal
+1428.7914 	DATA 	Main trial 97 run 4: rule=ABB, A=star, B=circle, A'=circle, B'=star
+1430.5288 	DATA 	Keypress: equal
+1432.5308 	DATA 	Keypress: equal
+1434.5320 	DATA 	Keypress: equal
+1436.5311 	DATA 	Keypress: equal
+1437.7215 	DATA 	Keypress: 2
+1437.7218 	DATA 	Main trial 97 response: key=2, rt=0.7730, correct=1
+1438.5338 	DATA 	Keypress: equal
+1440.4393 	DATA 	Main trial 98 run 4: rule=ABA, A=rectangle, B=triangle, A'=circle, B'=star
+1440.5344 	DATA 	Keypress: equal
+1442.5325 	DATA 	Keypress: equal
+1444.5294 	DATA 	Keypress: equal
+1446.5315 	DATA 	Keypress: equal
+1448.5339 	DATA 	Keypress: equal
+1449.7009 	DATA 	Keypress: 3
+1449.7011 	DATA 	Main trial 98 response: key=3, rt=0.6856, correct=1
+1450.5307 	DATA 	Keypress: equal
+1452.2085 	DATA 	Main trial 99 run 4: rule=ABB, A=circle, B=star, A'=circle, B'=rectangle
+1452.5322 	DATA 	Keypress: equal
+1454.5343 	DATA 	Keypress: equal
+1456.5341 	DATA 	Keypress: equal
+1458.5326 	DATA 	Keypress: equal
+1460.5279 	DATA 	Keypress: equal
+1460.8144 	DATA 	Keypress: 2
+1460.8147 	DATA 	Main trial 99 response: key=2, rt=0.4820, correct=1
+1462.5343 	DATA 	Keypress: equal
+1463.5718 	DATA 	Main trial 100 run 4: rule=ABB, A=triangle, B=circle, A'=circle, B'=rectangle
+1464.5315 	DATA 	Keypress: equal
+1466.5308 	DATA 	Keypress: equal
+1468.5334 	DATA 	Keypress: equal
+1470.5321 	DATA 	Keypress: equal
+1472.5290 	DATA 	Keypress: equal
+1473.3168 	DATA 	Keypress: 2
+1473.3170 	DATA 	Main trial 100 response: key=2, rt=0.5519, correct=1
+1474.5312 	DATA 	Keypress: equal
+1476.4922 	DATA 	Main trial 101 run 4: rule=ABB, A=circle, B=triangle, A'=triangle, B'=star
+1476.5346 	DATA 	Keypress: equal
+1478.5311 	DATA 	Keypress: equal
+1480.5328 	DATA 	Keypress: equal
+1482.5316 	DATA 	Keypress: equal
+1484.4742 	DATA 	Keypress: 1
+1484.4745 	DATA 	Main trial 101 response: key=1, rt=0.6923, correct=1
+1484.5308 	DATA 	Keypress: equal
+1486.5322 	DATA 	Keypress: equal
+1487.7840 	DATA 	Main trial 102 run 4: rule=ABA, A=triangle, B=circle, A'=triangle, B'=star
+1488.5315 	DATA 	Keypress: equal
+1490.5334 	DATA 	Keypress: equal
+1492.5338 	DATA 	Keypress: equal
+1494.5333 	DATA 	Keypress: equal
+1496.5295 	DATA 	Keypress: equal
+1497.6339 	DATA 	Keypress: 4
+1497.6341 	DATA 	Main trial 102 response: key=4, rt=0.7022, correct=1
+1498.5329 	DATA 	Keypress: equal
+1500.5322 	DATA 	Keypress: equal
+1501.5114 	DATA 	Main trial 103 run 4: rule=ABB, A=triangle, B=circle, A'=star, B'=rectangle
+1502.5302 	DATA 	Keypress: equal
+1504.5300 	DATA 	Keypress: equal
+1506.5314 	DATA 	Keypress: equal
+1508.5297 	DATA 	Keypress: equal
+1510.5185 	DATA 	Keypress: 4
+1510.5189 	DATA 	Main trial 103 response: key=4, rt=0.5532, correct=1
+1510.5304 	DATA 	Keypress: equal
+1512.5312 	DATA 	Keypress: equal
+1514.2695 	DATA 	Main trial 104 run 4: rule=ABB, A=star, B=circle, A'=star, B'=rectangle
+1514.5329 	DATA 	Keypress: equal
+1516.5334 	DATA 	Keypress: equal
+1518.5318 	DATA 	Keypress: equal
+1520.5341 	DATA 	Keypress: equal
+1522.5280 	DATA 	Keypress: equal
+1522.8768 	DATA 	Keypress: 4
+1522.8770 	DATA 	Main trial 104 response: key=4, rt=0.7126, correct=1
+1524.5298 	DATA 	Keypress: equal
+1526.1598 	DATA 	Main trial 105 run 4: rule=ABA, A=star, B=circle, A'=circle, B'=star
+1526.5350 	DATA 	Keypress: equal
+1528.5336 	DATA 	Keypress: equal
+1530.5325 	DATA 	Keypress: equal
+1532.5297 	DATA 	Keypress: equal
+1534.5324 	DATA 	Keypress: equal
+1535.2055 	DATA 	Keypress: 3
+1535.2060 	DATA 	Main trial 105 response: key=3, rt=0.4566, correct=1
+1536.5311 	DATA 	Keypress: equal
+1538.5344 	DATA 	Keypress: equal
+1539.7006 	DATA 	Main trial 106 run 4: rule=ABB, A=star, B=rectangle, A'=circle, B'=rectangle
+1540.5300 	DATA 	Keypress: equal
+1542.5343 	DATA 	Keypress: equal
+1544.5294 	DATA 	Keypress: equal
+1546.5309 	DATA 	Keypress: equal
+1548.1895 	DATA 	Keypress: 3
+1548.1898 	DATA 	Main trial 106 response: key=3, rt=0.4750, correct=1
+1548.5290 	DATA 	Keypress: equal
+1550.5311 	DATA 	Keypress: equal
+1551.1876 	DATA 	Main trial 107 run 4: rule=ABB, A=circle, B=rectangle, A'=star, B'=triangle
+1552.5290 	DATA 	Keypress: equal
+1554.5315 	DATA 	Keypress: equal
+1556.5331 	DATA 	Keypress: equal
+1558.5313 	DATA 	Keypress: equal
+1559.9688 	DATA 	Keypress: 4
+1559.9689 	DATA 	Main trial 107 response: key=4, rt=0.5365, correct=1
+1560.5311 	DATA 	Keypress: equal
+1562.5324 	DATA 	Keypress: equal
+1563.4324 	DATA 	Main trial 108 run 4: rule=ABB, A=triangle, B=rectangle, A'=circle, B'=star
+1564.5330 	DATA 	Keypress: equal
+1566.5315 	DATA 	Keypress: equal
+1568.5320 	DATA 	Keypress: equal
+1570.5331 	DATA 	Keypress: equal
+1572.1599 	DATA 	Keypress: 4
+1572.1601 	DATA 	Main trial 108 response: key=4, rt=0.5784, correct=1
+1572.4072 	DATA 	Main trial 109 run 4: rule=ABA, A=star, B=triangle, A'=rectangle, B'=star
+1572.5319 	DATA 	Keypress: equal
+1574.5292 	DATA 	Keypress: equal
+1576.5317 	DATA 	Keypress: equal
+1578.5295 	DATA 	Keypress: equal
+1580.5280 	DATA 	Keypress: equal
+1580.7498 	DATA 	Keypress: 1
+1580.7500 	DATA 	Main trial 109 response: key=1, rt=0.8006, correct=1
+1582.5329 	DATA 	Keypress: equal
+1584.5314 	DATA 	Keypress: equal
+1584.8282 	DATA 	Main trial 110 run 4: rule=ABB, A=rectangle, B=star, A'=circle, B'=star
+1586.5296 	DATA 	Keypress: equal
+1588.5323 	DATA 	Keypress: equal
+1590.5314 	DATA 	Keypress: equal
+1592.5315 	DATA 	Keypress: equal
+1593.4657 	DATA 	Keypress: 1
+1593.4659 	DATA 	Main trial 110 response: key=1, rt=0.5503, correct=1
+1594.5302 	DATA 	Keypress: equal
+1594.6486 	DATA 	Main trial 111 run 4: rule=ABB, A=circle, B=star, A'=rectangle, B'=star
+1596.5320 	DATA 	Keypress: equal
+1598.5341 	DATA 	Keypress: equal
+1600.5327 	DATA 	Keypress: equal
+1602.5317 	DATA 	Keypress: equal
+1604.1168 	DATA 	Keypress: 2
+1604.1171 	DATA 	Main trial 111 response: key=2, rt=0.5848, correct=1
+1604.5311 	DATA 	Keypress: equal
+1606.5317 	DATA 	Keypress: equal
+1608.0278 	DATA 	Main trial 112 run 4: rule=ABB, A=triangle, B=star, A'=star, B'=triangle
+1608.5337 	DATA 	Keypress: equal
+1610.5334 	DATA 	Keypress: equal
+1612.5336 	DATA 	Keypress: equal
+1614.5320 	DATA 	Keypress: equal
+1616.5284 	DATA 	Keypress: equal
+1616.9064 	DATA 	Keypress: 1
+1616.9066 	DATA 	Main trial 112 response: key=1, rt=0.5409, correct=1
+1618.1251 	DATA 	Main trial 113 run 4: rule=ABA, A=triangle, B=star, A'=star, B'=triangle
+1618.5309 	DATA 	Keypress: equal
+1620.5331 	DATA 	Keypress: equal
+1622.5295 	DATA 	Keypress: equal
+1624.5321 	DATA 	Keypress: equal
+1626.5308 	DATA 	Keypress: equal
+1627.8889 	DATA 	Keypress: 2
+1627.8891 	DATA 	Main trial 113 response: key=2, rt=0.5732, correct=1
+1628.5315 	DATA 	Keypress: equal
+1630.5298 	DATA 	Keypress: equal
+1630.7830 	DATA 	Main trial 114 run 4: rule=ABB, A=triangle, B=circle, A'=star, B'=triangle
+1632.5329 	DATA 	Keypress: equal
+1634.5329 	DATA 	Keypress: equal
+1636.5321 	DATA 	Keypress: equal
+1638.5312 	DATA 	Keypress: equal
+1640.4509 	DATA 	Keypress: 4
+1640.4511 	DATA 	Main trial 114 response: key=4, rt=1.8029, correct=0
+1640.5326 	DATA 	Keypress: equal
+1642.5329 	DATA 	Keypress: equal
+1643.6362 	DATA 	Main trial 115 run 4: rule=ABB, A=rectangle, B=triangle, A'=rectangle, B'=circle
+1644.5301 	DATA 	Keypress: equal
+1646.5298 	DATA 	Keypress: equal
+1648.5298 	DATA 	Keypress: equal
+1650.5321 	DATA 	Keypress: equal
+1652.0779 	DATA 	Keypress: 2
+1652.0782 	DATA 	Main trial 115 response: key=2, rt=0.5296, correct=1
+1652.5291 	DATA 	Keypress: equal
+1654.1043 	DATA 	Main trial 116 run 4: rule=ABB, A=star, B=rectangle, A'=star, B'=triangle
+1654.5321 	DATA 	Keypress: equal
+1656.5312 	DATA 	Keypress: equal
+1658.5316 	DATA 	Keypress: equal
+1660.5295 	DATA 	Keypress: equal
+1662.5285 	DATA 	Keypress: equal
+1663.1547 	DATA 	Keypress: 4
+1663.1549 	DATA 	Main trial 116 response: key=4, rt=0.8060, correct=1
+1664.5318 	DATA 	Keypress: equal
+1665.8183 	DATA 	Main trial 117 run 4: rule=ABA, A=circle, B=triangle, A'=rectangle, B'=triangle
+1666.5299 	DATA 	Keypress: equal
+1668.5320 	DATA 	Keypress: equal
+1670.5317 	DATA 	Keypress: equal
+1672.5321 	DATA 	Keypress: equal
+1674.4848 	DATA 	Keypress: 3
+1674.4850 	DATA 	Main trial 117 response: key=3, rt=0.4696, correct=1
+1674.5315 	DATA 	Keypress: equal
+1676.5323 	DATA 	Keypress: equal
+1678.5294 	DATA 	Keypress: equal
+1680.0452 	DATA 	Main trial 118 run 4: rule=ABB, A=circle, B=star, A'=circle, B'=star
+1680.5295 	DATA 	Keypress: equal
+1682.5305 	DATA 	Keypress: equal
+1684.5324 	DATA 	Keypress: equal
+1686.5304 	DATA 	Keypress: equal
+1688.5283 	DATA 	Keypress: equal
+1688.7993 	DATA 	Keypress: 4
+1688.7996 	DATA 	Main trial 118 response: key=4, rt=0.5183, correct=1
+1690.5329 	DATA 	Keypress: equal
+1691.1350 	DATA 	Main trial 119 run 4: rule=ABA, A=triangle, B=circle, A'=circle, B'=rectangle
+1692.5325 	DATA 	Keypress: equal
+1694.5313 	DATA 	Keypress: equal
+1696.5293 	DATA 	Keypress: equal
+1698.5350 	DATA 	Keypress: equal
+1700.2187 	DATA 	Keypress: 1
+1700.2189 	DATA 	Main trial 119 response: key=1, rt=0.6199, correct=1
+1700.5296 	DATA 	Keypress: equal
+1702.5297 	DATA 	Keypress: equal
+1703.2164 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0, draggable=False, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=np.float64(0.07), italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1.8)
+1704.5280 	DATA 	Keypress: equal
+1705.4387 	DATA 	Keypress: 4
+1705.4389 	INFO 	Session finished normally.
