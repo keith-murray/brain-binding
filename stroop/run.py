@@ -9,6 +9,19 @@ from psychopy import core, visual, event, logging
 PATH_TRIALS = 'trials.csv'
 
 
+class GracefulExit(Exception):
+    """Raised when the experimenter presses Escape to abort the session."""
+
+
+def interruptible_wait(duration: float) -> None:
+    """Wait for *duration* seconds; raise GracefulExit if Escape is pressed."""
+    clock = core.Clock()
+    while clock.getTime() < duration:
+        if event.getKeys(keyList=['escape']):
+            raise GracefulExit()
+        core.wait(0.005, hogCPUperiod=0)
+
+
 def main(sid: str) -> None:
     # -- CONFIG + LOGGING -- #
     main_clock = core.Clock()
@@ -66,7 +79,7 @@ def main(sid: str) -> None:
             # Fixation
             fixation.draw()
             win.flip()
-            core.wait(fixation_duration)
+            interruptible_wait(fixation_duration)
 
             # Stroop onset
             stroop.text = word
@@ -77,7 +90,7 @@ def main(sid: str) -> None:
 
             # Response (robust polling loop)
             result = event.waitKeys(
-                keyList=list(key_mapping.keys()),
+                keyList=list(key_mapping.keys()) + ['escape'],
                 timeStamped=rt_clock,
                 maxWait=stroop_duration,
                 clearEvents=True
@@ -85,6 +98,8 @@ def main(sid: str) -> None:
 
             if result is not None:
                 key, rt = result[0]
+                if key == 'escape':
+                    raise GracefulExit()
                 correct = (key_mapping.get(key) == color)
                 logging.data(f'Trial {t_idx} response: key={key}, rt={rt:.4f}, correct={correct}')
             else:
@@ -107,9 +122,12 @@ def main(sid: str) -> None:
             # ITI
             iti.draw()
             win.flip()
-            core.wait(iti_duration)
+            interruptible_wait(iti_duration)
 
         logging.info('Session finished normally.')
+
+    except GracefulExit:
+        logging.warning('Session aborted by experimenter (Escape).')
 
     except Exception as e:
         logging.error(f'Session crashed: {repr(e)}')

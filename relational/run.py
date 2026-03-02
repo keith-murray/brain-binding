@@ -8,6 +8,21 @@ from pathlib import Path
 import numpy as np
 from psychopy import core, event, logging, visual
 
+# --- Graceful exit ---
+
+class GracefulExit(Exception):
+    """Raised when the experimenter presses Escape to abort the session."""
+
+
+def interruptible_wait(duration: float) -> None:
+    """Wait for *duration* seconds; raise GracefulExit if Escape is pressed."""
+    clock = core.Clock()
+    while clock.getTime() < duration:
+        if event.getKeys(keyList=['escape']):
+            raise GracefulExit()
+        core.wait(0.005, hogCPUperiod=0)
+
+
 # --- Constants ---
 
 STIM_NAMES = ['circle', 'rectangle', 'star', 'triangle']
@@ -193,7 +208,7 @@ def show_fixation(win: visual.Window, fixation: visual.TextStim,
     fixation.draw()
     win.flip()
     t_onset = clock.getTime()
-    core.wait(duration)
+    interruptible_wait(duration)
     return t_onset
 
 
@@ -203,7 +218,7 @@ def show_stimulus(win: visual.Window, stim: visual.ImageStim,
     stim.draw()
     win.flip()
     t_onset = clock.getTime()
-    core.wait(duration)
+    interruptible_wait(duration)
     return t_onset
 
 
@@ -213,7 +228,7 @@ def show_blank(win: visual.Window, fixation: visual.TextStim,
     fixation.draw()
     win.flip()
     t_onset = clock.getTime()
-    core.wait(duration)
+    interruptible_wait(duration)
     return t_onset
 
 
@@ -230,11 +245,13 @@ def show_response(win: visual.Window, stimuli: dict, slot_mapping: list,
     t_onset = clock.getTime()
     rt_clock.reset()
     result = event.waitKeys(
-        keyList=RESPONSE_KEYS,
+        keyList=RESPONSE_KEYS + ['escape'],
         timeStamped=rt_clock,
         maxWait=RESPONSE_DEADLINE,
         clearEvents=True,
     )
+    if result is not None and result[0][0] == 'escape':
+        raise GracefulExit()
     return t_onset, result
 
 
@@ -249,7 +266,9 @@ def show_text_screen(win: visual.Window, text: str) -> None:
     )
     msg.draw()
     win.flip()
-    event.waitKeys()
+    keys = event.waitKeys()
+    if 'escape' in keys:
+        raise GracefulExit()
 
 
 def wait_for_scanner(win: visual.Window) -> None:
@@ -262,7 +281,9 @@ def wait_for_scanner(win: visual.Window) -> None:
     )
     msg.draw()
     win.flip()
-    event.waitKeys(keyList=['equal'])
+    keys = event.waitKeys(keyList=['equal', 'escape'])
+    if 'escape' in keys:
+        raise GracefulExit()
 
 
 # --- Task runners ---
@@ -505,6 +526,9 @@ def main(sid: str) -> None:
         show_text_screen(win, 'The experiment is complete. Thank you!\n\nPress any button to exit.')
 
         logging.info('Session finished normally.')
+
+    except GracefulExit:
+        logging.warning('Session aborted by experimenter (Escape).')
 
     except Exception as e:
         logging.error(f'Session crashed: {repr(e)}')
