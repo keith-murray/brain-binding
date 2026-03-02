@@ -28,7 +28,7 @@ def interruptible_wait(duration: float) -> None:
 STIM_NAMES = ['circle', 'rectangle', 'star', 'triangle']
 ASSETS_DIR = Path(__file__).parent.parent / 'assets'
 
-WIN_SIZE = [1200, 1000]
+WIN_SIZE = [1300, 900]
 WIN_UNITS = 'norm'
 WIN_SCREEN = 0
 
@@ -82,7 +82,7 @@ FIELDNAMES = [
 def make_window() -> visual.Window:
     return visual.Window(
         size=WIN_SIZE,
-        fullscr=True,
+        fullscr=False,
         color='white',
         units=WIN_UNITS,
         name='Window',
@@ -266,7 +266,7 @@ def show_text_screen(win: visual.Window, text: str) -> None:
     )
     msg.draw()
     win.flip()
-    keys = event.waitKeys()
+    keys = event.waitKeys(keyList=RESPONSE_KEYS)
     if 'escape' in keys:
         raise GracefulExit()
 
