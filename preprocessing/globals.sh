@@ -5,6 +5,7 @@
 # 1. Edit wherever the dicoms get transferred on the scanner
 
 scanner_dir=~/NEU502B/502b #Skyra
+scratch_dir=~/scratch502B/work/pygers
 #scanner_dir=/jukebox/dicom/conquest/Prisma-MSTZ400D/NormaL/2020 #Prisma
 #scanner_dir=/jukebox/norman/pygers/conquest #Sample project data
 
