@@ -6,7 +6,7 @@
 #SBATCH --job-name=mriqc
 
 # Set array to be your subject number(s)
-#SBATCH --array=001, 002, 003
+#SBATCH --array=001, 002, 008
 
 # Where to output log files?
 # make sure this logs directory exists!! otherwise the script won't run
