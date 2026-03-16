@@ -6,14 +6,14 @@
 
 scanner_dir=~/NEU502B/502b #Skyra
 scratch_dir=~/scratch502B/work/pygers
-#scanner_dir=/jukebox/dicom/conquest/Prisma-MSTZ400D/NormaL/2020 #Prisma
-#scanner_dir=/jukebox/norman/pygers/conquest #Sample project data
+# scanner_dir=/jukebox/dicom/conquest/Prisma-MSTZ400D/NormaL/2020 #Prisma
+# scanner_dir=/jukebox/norman/pygers/conquest #Sample project data
 
 # 2. Edit where your project directory is
 project_dir=~/pygers_workshop/sample_study
 
 # 3. Edit where your scratch and work directories are located (note: make sure you have setup a work directory on scratch)
-scratch_dir=/jukebox/scratch/USERNAME/work/YOURSTUDY
+# scratch_dir=/jukebox/scratch/USERNAME/work/YOURSTUDY
 # scratch_dir=/jukebox/YOURLAB/USERNAME/YOURSTUDY/data/work
 
 data_dir=$project_dir/data
