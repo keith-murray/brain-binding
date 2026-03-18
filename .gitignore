@@ -217,4 +217,5 @@ __marimo__/
 *.out 
 *.xwm
 data/
-.claude ./derivatives/
+.claude
+derivatives/
