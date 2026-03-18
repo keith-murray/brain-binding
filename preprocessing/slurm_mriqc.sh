@@ -6,7 +6,7 @@
 #SBATCH --job-name=mriqc
 
 # Set array to be your subject number(s)
-#SBATCH --array=001, 002, 008
+#SBATCH --array=1,2
 
 # Where to output log files?
 # make sure this logs directory exists!! otherwise the script won't run
@@ -35,6 +35,7 @@ date
 
 # # Set subject ID based on array index
 printf -v subj "%03d" $SLURM_ARRAY_TASK_ID
+echo $SLURM_ARRAY_TASK_ID
 
 # PARTICIPANT LEVEL
 echo "Running MRIQC on sub-$subj"

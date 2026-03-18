@@ -13,9 +13,6 @@ subj=$1
 # delete scout images
 find $bids_dir/sub-$subj -name "*scout*" -delete
 
-# delete duplicate runs if you run multiple -- OPTIONAL FOR YOU
-find $bids_dir/sub-$subj -name "*dup*" -delete
-
 # if you took AP/PA fieldmaps, here's an example on modifying the output to be bids-compatible
 # MAKE SURE YOU MODIFY THE FILENAMES TO MATCH YOUR STUDY'S FILENAMES 
 
