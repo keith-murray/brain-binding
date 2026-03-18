@@ -6,7 +6,7 @@
 #SBATCH --job-name=mriqc
 
 # Set array to be your subject number(s)
-#SBATCH --array=1,2
+#SBATCH --array=8
 
 # Where to output log files?
 # make sure this logs directory exists!! otherwise the script won't run
