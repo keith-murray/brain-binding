@@ -4,7 +4,7 @@
 #SBATCH --job-name=deface
 
 # Set array to be your subject number
-#SBATCH --array=001
+#SBATCH --array=008
 
 # Where to output log files?
 # make sure this logs directory exists!! otherwise the script won't run
