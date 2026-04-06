@@ -23,4 +23,6 @@ I think you should record the subject button presses to the psychopy log so that
 
 ## My interpretation
 
-Changing the triggers is the most important part, and it should be quite easy. As for the major comment, we already create a CSV log for human performance per trial but the instructor did not see this part. Let's just also implement the logging that the instructor recommends in tandem with our already established logging.
+Changing the triggers is the most important part, and it should be quite easy. I think that we should have a trigger every time the color of the fixation cross changes. This means that instead of having a trigger for each of the different rule and test stimuli, just have one trigger for rule stimuli and one trigger for test stimuli. We can simply deduce based on the sequence of triggers what the position of each stimulus is.
+
+As for the major comment, we already create a CSV log for human performance per trial but the instructor did not see this part. Let's just also implement the logging that the instructor recommends in tandem with our already established logging.
