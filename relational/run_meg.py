@@ -52,7 +52,7 @@ from psychopy.data import ExperimentHandler, TrialHandler
 # Try importing pypixxlib; fall back to keyboard-only dummy mode if unavailable
 try:
     from pypixxlib import _libdpx as dp
-    DUMMY_MODE = False
+    DUMMY_MODE = True
 except ImportError:
     DUMMY_MODE = True
 
@@ -106,14 +106,14 @@ RULE_REPS      = 5    # 24 configs × 5 = 120
 
 # Triggers (VPIXX Pixel Mode Blue channel, powers of 2)
 TRIGGER_SIZE       = 1
-TRIGGER_RESET      = [0, 0,   1]
-TRIGGER_FIXATION   = [0, 0,   2]
-TRIGGER_RULE       = [0, 0,   4]   # all 3 rule stims share this code
-TRIGGER_TEST       = [0, 0,   8]   # all 3 test stims share this code
-TRIGGER_TRANSITION = [0, 0,  16]   # yellow fixation (rule→test boundary)
-TRIGGER_CORRECT    = [0, 0,  32]   # green fixation (correct feedback)
-TRIGGER_INCORRECT  = [0, 0,  65]   # red fixation (incorrect feedback)
-TRIGGER_BLINK      = [0, 0, 128]   # blue fixation (blink cue)
+TRIGGER_RESET      = [0, 0,   0]
+TRIGGER_FIXATION   = [0, 0,   1]
+TRIGGER_RULE       = [0, 0,   2]   # all 3 rule stims share this code
+TRIGGER_TEST       = [0, 0,   4]   # all 3 test stims share this code
+TRIGGER_TRANSITION = [0, 0,   8]   # yellow fixation (rule→test boundary)
+TRIGGER_CORRECT    = [0, 0,  16]   # green fixation (correct feedback)
+TRIGGER_INCORRECT  = [0, 0,  32]   # red fixation (incorrect feedback)
+TRIGGER_BLINK      = [0, 0,  64]   # blue fixation (blink cue)
 
 # Fixation cross colors
 COLOR_FIXATION   = 'black'
@@ -481,7 +481,8 @@ def show_blink_window(win: visual.Window, fixation_blink: visual.ShapeStim,
     core.wait(BLINK_DURATION)
 
 
-def show_text_screen(win: visual.Window, text: str, info: dict) -> None:
+def show_text_screen(win: visual.Window, text: str, info: dict,
+                     trigger_patch: visual.Rect) -> None:
     """Show a text message and wait for any button box press."""
     msg = visual.TextStim(
         win=win,
@@ -491,6 +492,8 @@ def show_text_screen(win: visual.Window, text: str, info: dict) -> None:
         wrapWidth=win.size[0] * 0.8,
     )
     msg.draw()
+    _send_trigger(trigger_patch, TRIGGER_RESET)
+    trigger_patch.draw()
     win.flip()
 
     info = responsepixx_status(info, status='resume')
@@ -524,6 +527,7 @@ def run_main_task(win, stimuli, stim_pos,
                 f'Break — run {run_idx} of {N_RUNS} complete.\n\n'
                 'Rest for a moment, then press any button to continue.',
                 info,
+                trigger_patch,
             )
 
         run_trials = trials[run_idx * TRIALS_PER_RUN:(run_idx + 1) * TRIALS_PER_RUN]
@@ -735,6 +739,12 @@ def main() -> None:
         lineColorSpace='rgb',
     )
 
+    # Immediately flip with the reset trigger to ensure the upper-left pixel
+    # is black (value 0) from the first rendered frame, overriding the white
+    # window background before any experiment content is shown.
+    trigger_patch.draw()
+    win.flip()
+
     # --- PsychoPy ExperimentHandler (instructor-recommended logging) ---
     exp_handler = ExperimentHandler(
         name='relational_meg',
@@ -766,6 +776,7 @@ def main() -> None:
             'When the cross turns BLUE, you may blink.\n\n'
             'Press any button to begin.',
             info,
+            trigger_patch,
         )
 
         run_main_task(
@@ -780,6 +791,7 @@ def main() -> None:
             win,
             'The experiment is complete.\n\nThank you!\n\nPress any button to exit.',
             info,
+            trigger_patch,
         )
         logging.info('Session finished normally.')
 
