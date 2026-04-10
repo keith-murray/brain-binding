@@ -14,14 +14,15 @@ Paradigm:
         - random: 3rd test shape is randomly drawn from shapes not in the test pair
 
 Trigger Scheme (VPIXX Pixel Mode Blue, powers of 2):
-    - Reset       (  0): RGB = (0, 0, 0)   — between events
-    - Fixation    (  1): RGB = (0, 0, 1)   — trial-start white cross
-    - Rule stim   (  2): RGB = (0, 0, 2)   — any of the 3 rule stimuli
-    - Test stim   (  4): RGB = (0, 0, 4)   — any of the 3 test stimuli
-    - Transition  (  8): RGB = (0, 0, 8)   — yellow cross (rule→test gap)
-    - Correct     ( 16): RGB = (0, 0, 16)  — green cross (correct feedback)
-    - Incorrect   ( 32): RGB = (0, 0, 32)  — red cross (incorrect feedback)
-    - Blink       ( 64): RGB = (0, 0, 64)  — blue cross (blink cue)
+    - Reset          (  0): RGB = (0, 0,   0) — between events
+    - Fixation       (  1): RGB = (0, 0,   1) — trial-start white cross
+    - Rule stim      (  2): RGB = (0, 0,   2) — any of the 3 rule stimuli
+    - Test stim      (  4): RGB = (0, 0,   4) — first 2 test stimuli
+    - Test match     (  8): RGB = (0, 0,   8) — 3rd test stim on match trials
+    - Test non-match ( 16): RGB = (0, 0,  16) — 3rd test stim on non-match trials
+    - Transition     ( 32): RGB = (0, 0,  32) — yellow cross (rule→test gap)
+    - Response       ( 64): RGB = (0, 0,  64) — feedback onset (no correct/incorrect distinction)
+    - Blink          (128): RGB = (0, 0, 128) — blue cross (blink cue)
 
 Blink Trials:
     - Blue fixation cross after each trial's feedback
@@ -87,17 +88,14 @@ ASSETS_DIR = Path(__file__).parent.parent / 'assets'
 FIXATION_DURATION   = 0.500
 STIM_DURATION       = 0.500
 FEEDBACK_DURATION   = 0.500
-BLINK_DURATION      = 1.500
+BLINK_DURATION      = 2.500
 RESPONSE_DEADLINE   = 2.000
 TRANSITION_DURATION = 1.500   # fixed gap between rule and test phases
+ITI_DURATION        = 2.000
 
 ISI_MEAN = 1.0
 ISI_SD   = 0.2
-ISI_MIN  = 0.0
-
-ITI_BASE = 3.0
-ITI_SD   = 1.0
-ITI_MIN  = 0.0
+ISI_MIN  = 0.5
 
 # Task structure
 N_RUNS         = 4
@@ -109,14 +107,15 @@ TRIGGER_SIZE       = 1
 TRIGGER_RESET      = [0, 0,   0]
 TRIGGER_FIXATION   = [0, 0,   1]
 TRIGGER_RULE       = [0, 0,   2]   # all 3 rule stims share this code
-TRIGGER_TEST       = [0, 0,   4]   # all 3 test stims share this code
-TRIGGER_TRANSITION = [0, 0,   8]   # yellow fixation (rule→test boundary)
-TRIGGER_CORRECT    = [0, 0,  16]   # green fixation (correct feedback)
-TRIGGER_INCORRECT  = [0, 0,  32]   # red fixation (incorrect feedback)
-TRIGGER_BLINK      = [0, 0,  64]   # blue fixation (blink cue)
+TRIGGER_TEST       = [0, 0,   4]   # first 2 test stims share this code
+TRIGGER_TEST_MATCH = [0, 0,   8]   # 3rd test stim on match trials
+TRIGGER_TEST_NON   = [0, 0,  16]   # 3rd test stim on non-match trials
+TRIGGER_TRANSITION = [0, 0,  32]   # yellow fixation (rule→test boundary)
+TRIGGER_RESPONSE   = [0, 0,  64]   # feedback onset (no correct/incorrect distinction)
+TRIGGER_BLINK      = [0, 0, 128]   # blue fixation (blink cue)
 
 # Fixation cross colors
-COLOR_FIXATION   = 'black'
+COLOR_FIXATION   = 'white'
 COLOR_CORRECT    = 'green'
 COLOR_INCORRECT  = 'red'
 COLOR_BLINK      = 'blue'
@@ -462,10 +461,9 @@ def show_feedback(win: visual.Window,
                   trigger_patch: visual.Rect,
                   correct: bool) -> None:
     """Briefly show green (correct) or red (incorrect) fixation cross."""
-    fix     = fixation_correct   if correct else fixation_incorrect
-    trigger = TRIGGER_CORRECT    if correct else TRIGGER_INCORRECT
+    fix = fixation_correct if correct else fixation_incorrect
     fix.draw()
-    _send_trigger(trigger_patch, trigger)
+    _send_trigger(trigger_patch, TRIGGER_RESPONSE)
     trigger_patch.draw()
     win.flip()
     core.wait(FEEDBACK_DURATION)
@@ -487,7 +485,7 @@ def show_text_screen(win: visual.Window, text: str, info: dict,
     msg = visual.TextStim(
         win=win,
         text=text,
-        color='black',
+        color='white',
         height=30,
         wrapWidth=win.size[0] * 0.8,
     )
@@ -555,7 +553,7 @@ def run_main_task(win, stimuli, stim_pos,
             isi3    = TRANSITION_DURATION   # fixed; yellow fixation marks rule→test boundary
             isi4    = jitter(ISI_MEAN, ISI_SD, ISI_MIN)
             isi5    = jitter(ISI_MEAN, ISI_SD, ISI_MIN)
-            iti_dur = jitter(ITI_BASE, ITI_SD, ITI_MIN)
+            iti_dur = ITI_DURATION
 
             # 1. Trial-start fixation
             t_fixation = show_fixation(win, fixation, trigger_patch)
@@ -585,8 +583,11 @@ def run_main_task(win, stimuli, stim_pos,
                                     TRIGGER_TEST, trigger_patch)
             show_blank(win, fixation, trigger_patch, isi5)
 
-            t_test3 = show_stimulus(win, stimuli[test_seq[2]], stim_pos,
-                                    TRIGGER_TEST, trigger_patch)
+            t_test3 = show_stimulus(
+                win, stimuli[test_seq[2]], stim_pos,
+                TRIGGER_TEST_MATCH if trial['match'] else TRIGGER_TEST_NON,
+                trigger_patch,
+            )
 
             # 5. Response window
             t_response, response_key, rt = show_response_window(
@@ -700,7 +701,7 @@ def main() -> None:
 
     win = visual.Window(
         fullscr=True,
-        color='white',
+        color='black',
         colorSpace='rgb',
         units='pix',
         allowGUI=False,
