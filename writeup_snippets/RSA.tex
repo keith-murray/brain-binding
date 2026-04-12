@@ -1,0 +1,158 @@
+\documentclass[cropped,10pt]{standalone}
+
+\usepackage{tikz}
+
+% helvetica font
+\usepackage[scaled=1.1]{helvet}
+\usepackage{sfmath}
+\renewcommand{\familydefault}{\sfdefault}
+
+% or comment out previous 3 lines, and uncomment the one below, for clean latex font
+%\usepackage{cmbright}
+
+% you might want to define some colors:
+%\definecolor{myred}{HTML}{E51E10}
+%\definecolor{myblue}{HTML}{56B4E9}
+
+\usetikzlibrary[positioning,arrows,arrows.meta,shapes,calc,spy,intersections,shadows,bending]
+\usetikzlibrary[decorations.text,decorations.pathmorphing,decorations.markings]
+
+\pagestyle{empty}
+\thispagestyle{empty}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+% ----------------------------------------------------
+% ----------------------------------------------------
+
+  \node at (0.0, 98)[anchor = north west, scale = 1.07] {
+  \includegraphics{../rsa/binding/rsa_results_masked/plots_final/row_A.png}
+  };
+  \node at (0, 93.5) [anchor = north west] {
+  \includegraphics{../rsa/binding/rsa_results_masked/plots_final/row_B_loc_rdm.png}
+  };
+  \node at (5.1, 93.5) [anchor = north west] {
+  \includegraphics[trim=7 0 0 0, clip]{../rsa/binding/rsa_results_masked/plots_final/row_B_loc_scatter.png}
+  };
+  \node at (9.2, 93.5) [anchor = north west] {
+  \includegraphics{../rsa/binding/rsa_results_masked/plots_final/row_B_sma_rdm.png}
+  };
+  \node at (14.3, 93.5) [anchor = north west] {
+  \includegraphics[trim=7 0 0 0, clip]{../rsa/binding/rsa_results_masked/plots_final/row_B_sma_scatter.png}
+  };
+  \node at (0, 88.9) [anchor = north west] {
+  \includegraphics{../rsa/binding/rsa_results_masked/plots_final/row_C_dlpfc_rdm.png}};
+  \node at (5.1, 88.9) [anchor = north west] {
+  \includegraphics[trim=7 0 0 0, clip]{../rsa/binding/rsa_results_masked/plots_final/row_C_dlpfc_scatter.png}
+  };
+  \node at (9.2, 88.7) [anchor = north west, scale = 1.1] {
+  \includegraphics[trim=0 0 21 0, clip]{../rsa/binding/rsa_results_masked/plots_final/row_C_ortho.png}
+  };
+  \node at (0, 84.5) [anchor = north west, scale = 1.1] {
+  \includegraphics{../rsa/binding/rsa_results_masked/plots_final/row_D.png}
+  };
+  \draw[thick, red] (9.8, 92.865) -- (9.8, 89.43);
+  \draw[thick, blue] (10.02, 92.865) -- (10.02, 89.43);
+  \draw[thick, red] (10.24, 92.865) -- (10.24, 89.43);
+  \draw[thick, blue] (10.46, 92.865) -- (10.46, 89.43);
+  \draw[thick, red] (10.67, 92.865) -- (10.67, 89.43);
+  \draw[thick, blue] (10.88, 92.865) -- (10.88, 89.43);
+  \draw[thick, red] (11.10, 92.865) -- (11.10, 89.43);
+  \draw[thick, blue] (11.31, 92.865) -- (11.31, 89.43);
+  \draw[thick, red] (11.53, 92.865) -- (11.53, 89.43);
+  \draw[thick, blue] (11.74, 92.865) -- (11.74, 89.43);
+  \draw[thick, red] (11.96, 92.865) -- (11.96, 89.43);
+  \draw[thick, blue] (12.17, 92.865) -- (12.17, 89.43);
+  \draw[thick, red] (12.39, 92.865) -- (12.39, 89.43);
+  \draw[thick, blue] (12.60, 92.865) -- (12.60, 89.43);
+  \draw[thick, red] (12.82, 92.865) -- (12.82, 89.43);
+
+  \draw[thick, red] (9.58, 92.645) -- (13.02, 92.645);
+  \draw[thick, blue] (9.58, 92.43) -- (13.02, 92.43);
+  \draw[thick, red] (9.58, 92.215) -- (13.02, 92.215);
+  \draw[thick, blue] (9.58, 91.995) -- (13.02, 91.995);
+  \draw[thick, red] (9.58, 91.78) -- (13.02, 91.78);
+  \draw[thick, blue] (9.58, 91.565) -- (13.02, 91.565);
+  \draw[thick, red] (9.58, 91.35) -- (13.02, 91.35);
+  \draw[thick, blue] (9.58, 91.135) -- (13.02, 91.135);
+  \draw[thick, red] (9.58, 90.92) -- (13.02, 90.92);
+  \draw[thick, blue] (9.58, 90.705) -- (13.02, 90.705);
+  \draw[thick, red] (9.58, 90.49) -- (13.02, 90.49);
+  \draw[thick, blue] (9.58, 90.275) -- (13.02, 90.275);
+  \draw[thick, red] (9.58, 90.06) -- (13.02, 90.06);
+  \draw[thick, blue] (9.58, 89.845) -- (13.02, 89.845);
+  \draw[thick, red] (9.58, 89.63) -- (13.02, 89.63);
+
+
+  \draw [thick, red] (0.597, 88.050) rectangle (0.812, 87.825);
+  \draw [thick, red] (1.027, 88.050) rectangle (1.242, 87.825);
+  \draw [thick, red] (1.457, 88.050) rectangle (1.672, 87.825);
+  \draw [thick, red] (1.887, 88.050) rectangle (2.102, 87.825);
+  \draw [thick, red] (2.317, 88.050) rectangle (2.532, 87.825);
+  \draw [thick, red] (2.747, 88.050) rectangle (2.962, 87.825);
+  \draw [thick, red] (3.177, 88.050) rectangle (3.392, 87.825);
+  \draw [thick, red] (3.607, 88.050) rectangle (3.822, 87.825);
+
+  \draw [thick, red] (0.597, 87.625) rectangle (0.812, 87.4);
+  \draw [thick, red] (0.597, 87.2) rectangle (0.812, 86.975);
+  \draw [thick, red] (0.597, 86.775) rectangle (0.812, 86.55);
+  \draw[thick, red] (0.597, 86.34) rectangle (0.812, 86.115);
+  \draw [thick, red] (0.597, 85.905) rectangle (0.812, 85.68);
+  \draw [thick, red] (0.597, 85.48) rectangle (0.812, 85.255);
+  \draw [thick, red] (0.597, 85.045) rectangle (0.812, 84.82);
+
+  \draw[thick, red] (1.027, 87.625) rectangle (1.242, 87.4);
+  \draw [thick, red] (1.457, 87.2) rectangle (1.672, 86.975);
+  \draw [thick, red] (1.887, 86.775) rectangle (2.102, 86.55);
+  \draw [thick, red] (2.317, 86.34) rectangle (2.532, 86.115);
+  \draw [thick, red] (2.747, 85.905) rectangle (2.962, 85.68);
+
+
+  \node at (0, 98) [anchor = west]{\bfseries\Large A};
+  \node at (0.5, 98) [anchor = north west] {\bfseries \small i};
+  \node at (4.7, 98) [anchor = north west] {\bfseries \small ii};
+  \node at (8.9, 98) [anchor = north west] {\bfseries \small iii};
+  \node at (13.1, 98) [anchor = north west] {\bfseries \small iv};
+
+  \node at (0, 93.4) [anchor = west]{\bfseries\Large B};
+  \node at (0.5, 93.5) [anchor = north west] {\bfseries \small i};
+  \node at (4.8, 93.5) [anchor = north west] {\bfseries \small ii};
+  \node at (9.2, 93.4) [anchor = west] {\bfseries \Large C};
+  \node at (9.7, 93.5) [anchor = north west] {\bfseries \small i};
+  \node at (14.3, 93.5) [anchor = north west] {\bfseries \small ii};
+
+  \node at (0, 88.8) [anchor = west]{\bfseries\Large D};
+
+  \node at (0.5, 88.9) [anchor = north west] {\bfseries \small i};
+  \node at (4.8, 88.9) [anchor = north west] {\bfseries \small ii};
+  \node at (9.6, 88.9) [anchor = north west] {\bfseries \small iii};
+
+  \node at (0, 84.4) [anchor = west]{\bfseries\Large E};
+  \node at (0.5, 84.5) [anchor = north west] {\bfseries \small i};
+  \node at (7, 84.5) [anchor = north west] {\bfseries \small ii};
+  \node at (13.5, 84.5) [anchor = north west] {\bfseries \small iii};
+
+%
+%% helper grid (comment out once you're done!)
+%\draw[help lines,step=1,thin,gray!20] (0,0) grid (100, 100);
+%\draw[help lines,step=5,gray!20,very thick] (0,0) grid (100, 100);
+%\draw[help lines,step=10,gray!40,ultra thick] (0,0) grid (100, 100);
+%
+%\foreach \j in {10,15,..., 50}
+%  \node at (\j,85) [fill=white,text=red!80!black] {\j};
+%\foreach \j in {10,15,..., 95}
+%  \node at (23,\j) [fill=white,text=green!80!black] {\j};
+%
+
+
+% HERE YOU CAN USE TIKZ CODE TO ADD DIAGRAMS ETC
+
+% don't forget all your panel labels etc
+% e.g.:
+% \node at (10,90) [anchor=base,font=\bfseries,scale=1.5] {A};
+
+\end{tikzpicture}
+\end{document}
+
