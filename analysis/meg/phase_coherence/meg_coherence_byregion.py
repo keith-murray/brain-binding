@@ -63,8 +63,8 @@ TMIN_PLOT = -0.100
 TMAX_PLOT =  0.400
 
 # Highlight boxes: (t_start_s, t_end_s, f_low_hz, f_high_hz)
-ALPHA_BOX = (-0.05, 0.150,  8, 12)
-BETA_BOX  = ( 0.00, 0.250, 13, 30)
+ALPHA_BOX = (0,0,0,0)
+BETA_BOX  = (0,0,0,0)
 
 # Vertical reference lines (seconds); first is drawn in red (stimulus onset)
 VLINES = [0.0]
@@ -349,10 +349,10 @@ def plot_itc_differences(diff_ro, diff_rand,
         if sig_mask is not None:
             ax.contour(times * t_ms, freqs, sig_mask.astype(float),
                        levels=[0.5], colors='black', linewidths=1.0)
-        draw_box(ax, alpha_box[0] * t_ms, alpha_box[1] * t_ms,
-                 alpha_box[2], alpha_box[3], label='Alpha')
-        draw_box(ax, beta_box[0]  * t_ms, beta_box[1]  * t_ms,
-                 beta_box[2],  beta_box[3],  label='Beta')
+        # draw_box(ax, alpha_box[0] * t_ms, alpha_box[1] * t_ms,
+        #          alpha_box[2], alpha_box[3], label='Alpha')
+        # draw_box(ax, beta_box[0]  * t_ms, beta_box[1]  * t_ms,
+        #          beta_box[2],  beta_box[3],  label='Beta')
         for i, vt in enumerate(vlines):
             kw = dict(color='red', lw=1.8, ls='-') if i == 0 \
                  else dict(color='limegreen', lw=1.4, ls='--')
@@ -444,7 +444,7 @@ def run_pipeline():
             )
 
         # Plot and save
-        out_file = OUTPUT_DIR / f'itc_difference_{region}_perm.png'
+        out_file = OUTPUT_DIR / f'itc_difference_{region}.png'
         fig = plot_itc_differences(
             diff_ro, diff_rand,
             sig_mask_ro=sig_mask_ro,
