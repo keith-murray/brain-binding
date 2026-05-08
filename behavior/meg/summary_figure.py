@@ -220,28 +220,88 @@ def make_summary_figure(df: pd.DataFrame, outpath: Path) -> None:
 
     # ── statistics (printed for caption) ─────────────────────────────────────
 
-    aba_acc = np.array([rule_acc[s]["ABA"] for s in sids])
-    abb_acc = np.array([rule_acc[s]["ABB"] for s in sids])
-    t_rule, p_rule = paired_t(aba_acc, abb_acc)
+    # Accuracy: binomial tests vs chance (0.5) and chi-square comparisons
+    n_total   = len(df)
+    n_correct = int(df["correct"].sum())
+    binom_overall = stats.binomtest(n_correct, n_total, p=0.5)
+
+    rule_binom = {}
+    for rule in ["ABA", "ABB"]:
+        g = df.loc[df["rule_type"] == rule]
+        nc, nt = int(g["correct"].sum()), len(g)
+        rule_binom[rule] = (nc, nt, stats.binomtest(nc, nt, p=0.5))
+    ct_rule = pd.crosstab(df["rule_type"], df["correct"])
+    chi2_rule, p_chi2_rule, dof_rule, _ = stats.chi2_contingency(ct_rule)
+
+    tt_binom = {}
+    for tt in ["match", "rule_order", "random"]:
+        g = df.loc[df["trial_type"] == tt]
+        nc, nt = int(g["correct"].sum()), len(g)
+        tt_binom[tt] = (nc, nt, stats.binomtest(nc, nt, p=0.5))
+    ct_tt = pd.crosstab(df["trial_type"], df["correct"])
+    chi2_tt, p_chi2_tt, dof_tt, _ = stats.chi2_contingency(ct_tt)
+    tt_fisher = {}
+    for a, b in [("match", "rule_order"), ("match", "random"), ("rule_order", "random")]:
+        sub = df.loc[df["trial_type"].isin([a, b])]
+        ct = pd.crosstab(sub["trial_type"], sub["correct"])
+        _, p_fish = stats.fisher_exact(ct)
+        tt_fisher[(a, b)] = p_fish
+
+    # RT: medians per participant, MWU comparisons
+    rt_all = df_correct["rt"].dropna().to_numpy()
+    rt_med_per_sid = {
+        sid: float(np.median(df_correct.loc[df_correct["sid"] == sid, "rt"].dropna()))
+        for sid in sids
+    }
 
     rt_aba = df_correct.loc[df_correct["rule_type"] == "ABA", "rt"].dropna().to_numpy()
     rt_abb = df_correct.loc[df_correct["rule_type"] == "ABB", "rt"].dropna().to_numpy()
     u_rule_rt, p_rule_rt = indep_mwu(rt_aba, rt_abb)
 
-    rt_match = df_correct.loc[df_correct["trial_type"] == "match", "rt"].dropna().to_numpy()
-    rt_ro    = df_correct.loc[df_correct["trial_type"] == "rule_order", "rt"].dropna().to_numpy()
-    rt_rand  = df_correct.loc[df_correct["trial_type"] == "random", "rt"].dropna().to_numpy()
+    rt_match = df_correct.loc[df_correct["trial_type"] == "match",      "rt"].dropna().to_numpy()
+    rt_ro    = df_correct.loc[df_correct["trial_type"] == "rule_order",  "rt"].dropna().to_numpy()
+    rt_rand  = df_correct.loc[df_correct["trial_type"] == "random",      "rt"].dropna().to_numpy()
     u_match_ro,   p_match_ro   = indep_mwu(rt_match, rt_ro)
     u_match_rand, p_match_rand = indep_mwu(rt_match, rt_rand)
     u_ro_rand,    p_ro_rand    = indep_mwu(rt_ro, rt_rand)
 
     print("\n── Statistics for figure caption ──────────────────────────────")
-    print(f"  (0,1) Accuracy ABA vs ABB:              paired t({len(sids)-1}) = {t_rule:.3f}, p = {p_rule:.4f}")
-    print(f"  (1,1) RT ABA vs ABB (MWU):              U = {u_rule_rt:.1f}, p = {p_rule_rt:.4f}")
-    print(f"  (1,2) RT match vs rule_order (MWU):     U = {u_match_ro:.1f}, p = {p_match_ro:.4f}")
-    print(f"  (1,2) RT match vs random (MWU):         U = {u_match_rand:.1f}, p = {p_match_rand:.4f}")
-    print(f"  (1,2) RT rule_order vs random (MWU):    U = {u_ro_rand:.1f}, p = {p_ro_rand:.4f}")
-    print("───────────────────────────────────────────────────────────────\n")
+
+    print(f"\n  Panel (0,0) — Overall accuracy")
+    print(f"    {n_correct}/{n_total} = {n_correct/n_total:.4f}")
+    print(f"    Binomial test vs chance (0.5): p = {binom_overall.pvalue:.4f}")
+
+    print(f"\n  Panel (0,1) — Accuracy by rule type")
+    for rule in ["ABA", "ABB"]:
+        nc, nt, bt = rule_binom[rule]
+        print(f"    {rule}: {nc}/{nt} = {nc/nt:.4f}, binomial p = {bt.pvalue:.4f}")
+    print(f"    Chi-square (ABA vs ABB): chi2({dof_rule}) = {chi2_rule:.4f}, p = {p_chi2_rule:.4f}")
+
+    print(f"\n  Panel (0,2) — Accuracy by trial type")
+    for tt in ["match", "rule_order", "random"]:
+        nc, nt, bt = tt_binom[tt]
+        print(f"    {tt}: {nc}/{nt} = {nc/nt:.4f}, binomial p = {bt.pvalue:.4f}")
+    print(f"    Chi-square (across trial types): chi2({dof_tt}) = {chi2_tt:.4f}, p = {p_chi2_tt:.4f}")
+    for (a, b), p in tt_fisher.items():
+        print(f"    Fisher exact ({a} vs {b}): p = {p:.4f}")
+
+    print(f"\n  Panel (1,0) — RT distribution per participant (correct trials)")
+    for sid, label in zip(sids, short_labels):
+        print(f"    {label}: median RT = {rt_med_per_sid[sid]:.4f} s")
+
+    print(f"\n  Panel (1,1) — RT by rule type (correct trials, aggregated)")
+    print(f"    ABA: median = {np.median(rt_aba):.4f} s  (n={len(rt_aba)})")
+    print(f"    ABB: median = {np.median(rt_abb):.4f} s  (n={len(rt_abb)})")
+    print(f"    MWU (ABA vs ABB): U = {u_rule_rt:.1f}, p = {p_rule_rt:.4f}")
+
+    print(f"\n  Panel (1,2) — RT by trial type (correct trials, aggregated)")
+    for tt, rt_vals in [("match", rt_match), ("rule_order", rt_ro), ("random", rt_rand)]:
+        print(f"    {tt}: median = {np.median(rt_vals):.4f} s  (n={len(rt_vals)})")
+    print(f"    MWU (match vs rule_order):    U = {u_match_ro:.1f}, p = {p_match_ro:.4f}")
+    print(f"    MWU (match vs random):        U = {u_match_rand:.1f}, p = {p_match_rand:.4f}")
+    print(f"    MWU (rule_order vs random):   U = {u_ro_rand:.1f}, p = {p_ro_rand:.4f}")
+
+    print("\n───────────────────────────────────────────────────────────────\n")
 
     # ── figure layout ─────────────────────────────────────────────────────────
 
