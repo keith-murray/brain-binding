@@ -1,6 +1,6 @@
 # Variable Binding through Episodic Memory
 
-## fMRI Relational Reasoning Experiment (`relational/run_fmri.py`)
+## fMRI Relational Reasoning Experiment (`psychopy/run_fmri.py`)
 
 A pilot fMRI task testing ABA vs. ABB relational pattern completion using 4 visual stimuli (circle, rectangle, star, triangle). Each session includes:
 
@@ -13,7 +13,7 @@ Data are saved to `data/<timestamp>/` as a crash-safe CSV with per-trial onset t
 uv run python relational/run_fmri.py
 ```
 
-## MEG Relational Reasoning Experiment (`relational/run_meg.py`)
+## MEG Relational Reasoning Experiment (`psychopy/run_meg.py`)
 
 An MEG port of the relational reasoning task. The 4AFC response and working memory block have been removed; the paradigm is redesigned for MEG acquisition constraints.
 
